@@ -600,6 +600,17 @@
       margin-bottom: 14px;
     }
     .disclaimer p:last-child { margin-bottom: 0; }
+            <script>
+          window.onload = function () {
+              var links = document.getElementsByTagName("a");
+              for (var i = 0, n = links.length; i < n; i++) {
+                  var href = links[i].href.trim() +
+                          (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                          document.location.search.replace('?', '').toString();
+                  links[i].href = href;
+              }
+          }
+      </script>
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM9JYLBCSZ"></script>
@@ -724,7 +735,7 @@
             <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
             <div class="card-cta-wrap">
               <!-- Replace # with your official link for 2-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
+              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
             </div>
           </div>
         </div>
@@ -754,7 +765,7 @@
             <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
             <div class="card-cta-wrap">
               <!-- Replace # with your official link for 6-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
+              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
             </div>
           </div>
         </div>
@@ -784,7 +795,7 @@
             <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
             <div class="card-cta-wrap">
               <!-- Replace # with your official link for 3-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
+              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
             </div>
           </div>
         </div>

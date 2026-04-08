@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>60 MINUTES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+<script>
+
+(function() {
+    function getParam(name) {
+        try {
+            return new URL(window.location.href).searchParams.get(name) || "";
+        } catch (e) {
+            return "";
+        }
+    }
+
+    function extractId(value) {
+        if (!value) return "";
+        var parts = value.split("|");
+        return parts.length > 1 ? parts[parts.length - 1] : parts[0];
+    }
+
+    var utm_source = extractId(getParam("utm_source"));
+    var utm_campaign = extractId(getParam("utm_campaign"));
+    var utm_medium = extractId(getParam("utm_medium"));
+    var utm_content = extractId(getParam("utm_content"));
+    var utm_term = extractId(getParam("utm_term"));
+
+    // Se não houver parâmetros, interrompe a execução
+    if (!utm_source && !utm_campaign && !utm_medium && !utm_content && !utm_term) {
+        return;
+    }
+
+    // Lista dos seus 3 links do ClickBank
+    var hopBases = [
+        "https://a58956zrvahq0zb8j8zi7gst4m.hop.clickbank.net/?cbpage=2bottlesmo",
+        "https://7035c90iwdkk5y06ldqi5n2o1a.hop.clickbank.net/?cbpage=6bottlesmo",
+        "https://395b2g2pyaisfx17hl-d2bvp8x.hop.clickbank.net/?cbpage=3bottlesmo"
+    ];
+
+    var params = [
+        "aff_sub1=" + encodeURIComponent(utm_source),
+        "aff_sub2=" + encodeURIComponent(utm_campaign),
+        "aff_sub3=" + encodeURIComponent(utm_medium),
+        "aff_sub4=" + encodeURIComponent(utm_content),
+        "aff_sub5=" + encodeURIComponent(utm_term),
+        "unique_aff_sub1=" + encodeURIComponent(utm_source),
+        "unique_aff_sub2=" + encodeURIComponent(utm_campaign),
+        "unique_aff_sub3=" + encodeURIComponent(utm_medium),
+        "unique_aff_sub4=" + encodeURIComponent(utm_content),
+        "unique_aff_sub5=" + encodeURIComponent(utm_term)
+    ].join("&");
+
+    // Loop para processar cada um dos 3 links
+    hopBases.forEach(function(base) {
+        // Como o link já tem "?cbpage=", usamos "&" para adicionar as UTMs
+        var hopUrl = base + "&" + params;
+
+        var iframe = document.createElement("iframe");
+        iframe.src = hopUrl;
+        iframe.width = "0";
+        iframe.height = "0";
+        iframe.style.cssText = "display:none;width:0;height:0;border:0;position:absolute;left:-9999px;";
+        iframe.setAttribute("tabindex", "-1");
+        iframe.setAttribute("aria-hidden", "true");
+        iframe.setAttribute("title", "");
+
+        if (document.body) {
+            document.body.appendChild(iframe);
+        } else {
+            document.addEventListener("DOMContentLoaded", function() {
+                document.body.appendChild(iframe);
+            });
+        }
+        
+        console.log("[HopLink] Ativado para: " + base);
+    });
+
+    console.log("[HopLink] Todos os IDs de rastreio foram injetados.");
+})();
+
+</script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-is-click-bank
+  async
+  defer
+></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CM9JYLBCSZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CM9JYLBCSZ');
+</script>
+  </head>
+  <body>
+    <div class="wave-bg" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero">
+        <p class="badge">Confidential</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">They began <span class="text-red">shutting down</span> your brain in 1977.</span>
+        </h1>
+        <p class="hero__subtitle">Now, a neurological discovery may help restore what was lost.</p>
+
+        <div class="video-wrap">
+          <vturb-smartplayer id="vid-69d4456a49922114cb886592" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/69d4456a49922114cb886592/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </main>
+    <!-- Pricing Section -->
+    <section class="pricing-section esconder">
+      <div class="pricing-header">
+        <h2>Claim Your Discounted <strong>MemoryON</strong><br>Below For Huge Savings</h2>
+        <div class="pricing-arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="pricing-cards">
+
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="pricing-card__tier">STARTER</div>
+          <div class="card-left">
+            <h3 class="pricing-card__bottles">2 BOTTLES</h3>
+            <p class="pricing-card__supply">60 Day Supply</p>
+            <div class="pricing-card__img">
+              <img src="assets/img/2.png" alt="2 Bottles of MemoryON" />
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="pricing-card__price">$79<span>/bottle</span></div>
+            <ul class="pricing-card__features">
+              <li class="feat--no"><img src="assets/img/checkvermelho.svg" alt="" aria-hidden="true">FREE BONUSES!</li>
+              <li class="feat--no"><img src="assets/img/checkvermelho.svg" alt="" aria-hidden="true">FAST SHIPPING</li>
+              <li class="feat--no"><img src="assets/img/checkvermelho.svg" alt="" aria-hidden="true">FREE SHIPPING</li>
+            </ul>
+            <a href="https://a58956zrvahq0zb8j8zi7gst4m.hop.clickbank.net/?cbpage=2bottlesmo" class="pricing-card__btn smartplayer-click-event-1">
+              <img src="assets/img/button.webp" alt="Buy Now" />
+            </a>
+            <div class="pricing-card__payments">
+              <img src="assets/img/card.png" alt="Accepted payment methods" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Best Seller -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">BEST SELLER</div>
+          <div class="card-left">
+            <h3 class="pricing-card__bottles">6 BOTTLES</h3>
+            <p class="pricing-card__supply">180 Day Supply</p>
+            <div class="pricing-card__img">
+              <img src="assets/img/6.png" alt="6 Bottles of MemoryON" />
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="pricing-card__price">$49<span>/bottle</span></div>
+            <ul class="pricing-card__features">
+              <li class="feat--yes"><img src="assets/img/checkverde.svg" alt="" aria-hidden="true">2 FREE BONUSES!</li>
+              <li class="feat--yes"><img src="assets/img/checkverde.svg" alt="" aria-hidden="true">FAST &amp; FREE SHIPPING</li>
+              <li class="feat--yes"><img src="assets/img/checkverde.svg" alt="" aria-hidden="true">60 DAYS GUARANTEE</li>
+            </ul>
+            <a href="https://7035c90iwdkk5y06ldqi5n2o1a.hop.clickbank.net/?cbpage=6bottlesmo" class="pricing-card__btn pricing-card__btn--featured smartplayer-click-event-2">
+              <img src="assets/img/button.webp" alt="Buy Now" />
+            </a>
+            <div class="pricing-card__payments">
+              <img src="assets/img/card.png" alt="Accepted payment methods" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard -->
+        <div class="pricing-card">
+          <div class="pricing-card__tier">STANDARD</div>
+          <div class="card-left">
+            <h3 class="pricing-card__bottles">3 BOTTLES</h3>
+            <p class="pricing-card__supply">90 Day Supply</p>
+            <div class="pricing-card__img">
+              <img src="assets/img/3.png" alt="3 Bottles of MemoryON" />
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="pricing-card__price">$69<span>/bottle</span></div>
+            <ul class="pricing-card__features">
+              <li class="feat--no"><img src="assets/img/checkvermelho.svg" alt="" aria-hidden="true">FREE BONUSES!</li>
+              <li class="feat--yes"><img src="assets/img/checkverde.svg" alt="" aria-hidden="true">FAST &amp; FREE SHIPPING</li>
+              <li class="feat--yes"><img src="assets/img/checkverde.svg" alt="" aria-hidden="true">60 DAYS GUARANTEE</li>
+            </ul>
+            <a href="https://395b2g2pyaisfx17hl-d2bvp8x.hop.clickbank.net/?cbpage=3bottlesmo" class="pricing-card__btn smartplayer-click-event-3">
+              <img src="assets/img/button.webp" alt="Buy Now" />
+            </a>
+            <div class="pricing-card__payments">
+              <img src="assets/img/card.png" alt="Accepted payment methods" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <main class="page page--bottom">
+      <section class="section copy-block">
+        <p>
+          For decades, cognitive decline has been treated as an inevitable part of aging. But a growing
+          body of neurological research suggests that assumption may be incomplete.
+        </p>
+        <p>
+          Some experts now believe the issue doesn't start with age itself… but with something far more
+          subtle: what could be described as <strong>"brain starvation."</strong>
+        </p>
+        <p>
+          The human brain depends on specific nutrients — particularly certain lipids — to maintain
+          memory, clarity, and neural connections. Yet over the past several decades, widely adopted
+          dietary changes may have significantly reduced these essential elements.
+        </p>
+        <p>The result?</p>
+        <p>A gradual decline that, until recently, was considered irreversible.</p>
+
+        <h2 class="heading-white">What's most intriguing is this:</h2>
+        <p>
+          When researchers examined individuals who maintained sharp cognitive function well into their
+          80s and 90s, they found a consistent pattern — these individuals did not follow the same
+          dietary restrictions commonly recommended today.
+        </p>
+        <p>Which raises an uncomfortable, but necessary question:</p>
+        <p>
+          <strong>What if part of what we've been told protects the brain… is actually contributing
+          to its decline?</strong>
+        </p>
+        <p>
+          In the video above, a neurologist explains how this insight led to a protocol built around
+          <strong>three specific brain lipids</strong> — and why this approach is gaining attention for
+          its impact in cases once believed to have no solution.
+        </p>
+
+        <a class="cta" href="#">
+          <span class="cta__icon" aria-hidden="true"></span>
+          WATCH THE VIDEO
+        </a>
+      </section>
+
+    </main><!-- end page--bottom -->
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+          <div class="site-footer__logo">
+            <img src="assets/img/60-minutes-logo.png" alt="60 Minutes" />
+          </div>
+
+          <nav class="site-footer__nav" aria-label="Site Navigation">
+            <h3 class="site-footer__heading">Site Navigation</h3>
+            <ul>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">Episodes</a></li>
+              <li><a href="#">About the Show</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__nav" aria-label="Privacy and Terms">
+            <h3 class="site-footer__heading">Privacy &amp; Terms</h3>
+            <ul>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__nav" aria-label="Information">
+            <h3 class="site-footer__heading">Information</h3>
+            <ul>
+              <li><a href="contact.html">Help / Contact Us</a></li>
+              <li><a href="#">Closed Captioning</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__social">
+            <h3 class="site-footer__heading">Follow Us</h3>
+            <div class="site-footer__icons">
+              <!-- Facebook -->
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <!-- X / Twitter -->
+              <a href="#" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <!-- YouTube -->
+              <a href="#" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#111"/></svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="#111"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>&copy; 2026 60 Minutes. All rights reserved.</p>
+        </div>
+    </footer>
+    <style>
+  .esconder {
+    display: none;
+  }
+</style>
+
+<style>
+  .esconder {
+    display: none;
+  }
+</style>
+
+<script>
+  var delaySeconds = 2549;
+  var player = document.querySelector("vturb-smartplayer");
+  player.addEventListener("player:ready", function() {
+    player.displayHiddenElements(delaySeconds, [".esconder"], {
+      persist: true
+    });
+  });
+</script>
+  </body>
+</html>

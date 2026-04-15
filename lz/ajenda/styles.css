@@ -330,7 +330,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--text);
+  color: #ffffff;
   background: var(--red);
   border: none;
   border-radius: 0;

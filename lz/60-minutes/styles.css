@@ -8,7 +8,7 @@
   --red: var(--primary);
   --red-hover: color-mix(in oklab, var(--primary) 72%, black);
   --card-bg: #0a0a0a;
-  --card-border: #2a2a2a;
+  --card-border: #666666;
   --muted: #6b6b6b;
   --wave: rgba(0, 200, 255, 0.12);
   --max: 800px;
@@ -71,7 +71,7 @@ strong {
   z-index: 1;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 2rem 1.5rem 2rem;
+  padding: 2rem 1rem 2rem;
 }
 
 .page--bottom {
@@ -128,7 +128,6 @@ strong {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--primary);
-  background-color: color-mix(in oklab, var(--primary) 20%, transparent);
   border: 1px solid var(--primary);
   border-radius: 5px;
 }

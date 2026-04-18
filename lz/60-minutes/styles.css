@@ -306,7 +306,7 @@ strong {
 
 .hero__subtitle {
   margin: 0 0 2rem;
-  font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+  font-size: clamp(1.35rem, 3.5vw, 1.45rem);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.2;

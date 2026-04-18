@@ -486,6 +486,9 @@ strong {
   font-size: 1.25rem;
   color: #091B0D;
   font-family: var(--font);
+  font-weight: 700;
+  line-height: 1.25;
+
 }
 
 .shipping-banner__title strong {
@@ -494,9 +497,11 @@ strong {
 
 .shipping-banner__sub {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #091B0D;
   font-family: var(--font);
+   line-height: 1.25;
+
 }
 
 .pricing-header {
@@ -670,7 +675,7 @@ strong {
 /* Total price */
 .pricing-card__total {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #555;
   margin-top: -0.5rem;
   margin-bottom: 0.75rem;
@@ -810,7 +815,7 @@ strong {
   }
 
   .shipping-banner__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .shipping-banner__sub {

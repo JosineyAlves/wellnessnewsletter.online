@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Verification">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="X-Content-Type-Options" content="nosniff">
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+		<meta name="referrer" content="strict-origin-when-cross-origin">
+		<meta http-equiv="X-Frame-Options" content="DENY">
+		<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+		<meta name="author" content="Today">
+		<title>Verification</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@300;400&family=Montserrat:wght@400;600&family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+			html {
+			scroll-behavior: smooth;
+			}
+			body {
+			font-family: 'Roboto', sans-serif;
+			min-height: 100vh;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			overflow-x: hidden;
+			color: #E8E5E0;
+			background-color: #0A0A0A;
+			background-image:
+			radial-gradient(ellipse at 20% 0%, rgba(255, 107, 26, 0.08), transparent 50%),
+			radial-gradient(ellipse at 80% 100%, rgba(255, 107, 26, 0.04), transparent 60%),
+			linear-gradient(180deg, #0A0A0A 0%, #050505 100%);
+			background-attachment: fixed;
+			}
+			/* ===== V4 NEWS HEADER ===== */
+			.site-header {
+			background: #050505;
+			}
+			.site-header-topbar {
+			background: #FF6B1A;
+			padding: 5px 0;
+			}
+			.site-header-topbar .hdr-wrap {
+			max-width: 1440px;
+			margin: 0 auto;
+			padding: 0 24px;
+			display: flex;
+			align-items: center;
+			gap: 24px;
+			justify-content: flex-end;
+			}
+			.site-header-toplink {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			font-family: 'Space Mono', 'Courier New', monospace;
+			font-size: 11px;
+			font-weight: 700;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #000;
+			text-decoration: none;
+			transition: opacity 0.2s;
+			}
+			.site-header-toplink:hover { opacity: 0.7; }
+			.site-header-masthead {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 14px 24px;
+			max-width: 1440px;
+			margin: 0 auto;
+			position: relative;
+			}
+			.site-header-brand {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-decoration: none;
+			}
+			.brand-text {
+			font-family: 'Anton', 'Impact', sans-serif;
+			font-size: clamp(16px, 2vw, 24px);
+			line-height: 1;
+			color: #fff;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			border-bottom: 2px solid #FF6B1A;
+			padding-bottom: 3px;
+			}
+			/* Footer brand */
+			.footer-brand-v4 {
+			margin-bottom: 20px;
+			}
+			.brand-text-footer {
+			font-family: 'Anton', 'Impact', sans-serif;
+			font-size: 20px;
+			line-height: 1;
+			color: #888;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			}
+			/* Header mobile */
+			@media screen and (max-width: 768px) {
+			.brand-text { font-size: 22px; }
+			.site-header-masthead { padding: 12px 16px; }
+			}
+			/* Header Section */
+			.header-section {
+			padding: 100px 0 10px;
+			}
+			.header-container {
+			max-width: 1140px;
+			margin: 0 auto;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 5px;
+			}
+			.header-title {
+			font-family: 'Poppins', sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			text-align: center;
+			color: #E8E5E0;
+			}
+			.header-subtitle {
+			font-family: 'Poppins', sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: center;
+			color: #fff;
+			}
+			/* Main Section */
+			.main-section {
+			padding: 40px 0 60px;
+			}
+			/* News Section */
+			.news-section {
+			padding: 60px 0 80px;
+			background-color: #f9f9f9;
+			margin-top: 50px;
+			}
+			.news-container {
+			max-width: 860px;
+			margin: 0 auto;
+			padding: 0 20px;
+			}
+			.news-heading {
+			font-family: 'Poppins', sans-serif;
+			font-size: 12px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: #aaa;
+			text-align: center;
+			margin-bottom: 36px;
+			}
+			.news-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			}
+			.news-card-link {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			}
+			.news-card {
+			display: flex;
+			gap: 0;
+			background: #fff;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+			transition: box-shadow 0.2s ease, transform 0.2s ease;
+			}
+			.news-card-link:hover .news-card {
+			box-shadow: 0 6px 20px rgba(0,0,0,0.13);
+			transform: translateY(-2px);
+			}
+			.news-img {
+			width: 220px;
+			min-width: 220px;
+			height: 165px;
+			object-fit: cover;
+			display: block;
+			}
+			.news-body {
+			padding: 20px 24px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 8px;
+			}
+			.news-tag {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 10px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: #e60000;
+			}
+			.news-title {
+			font-family: 'Poppins', sans-serif;
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 1.4;
+			color: #1a1a1a;
+			margin: 0;
+			}
+			.news-text {
+			font-family: 'Roboto', sans-serif;
+			font-size: 13px;
+			line-height: 1.65;
+			color: #666;
+			margin: 0;
+			}
+			@media screen and (max-width: 600px) {
+			.news-card {
+			flex-direction: column;
+			}
+			.news-img {
+			width: 100%;
+			min-width: unset;
+			height: 260px;
+			}
+			.news-body {
+			padding: 16px;
+			}
+			.news-title {
+			font-size: 14px;
+			}
+			}
+			.main-container {
+			max-width: 1140px;
+			margin: 0 auto;
+			padding: 0 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+			.button-wrapper {
+			margin-top: 10px;
+			}
+			.main-button {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 14px 50px;
+			background-color: #e60000;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 25px;
+			font-weight: 600;
+			text-decoration: none;
+			border-radius: 8px;
+			transition: background-color 0.3s ease-in-out;
+			}
+			.main-button:hover {
+			background-color: #FF6B1A;
+			color: #fff;
+			}
+			/* Footer Section */
+			.footer-section {
+			background-color: #f5f5f5;
+			border-top: 1px solid #e0e0e0;
+			padding: 48px 0 40px;
+			}
+			.footer-container {
+			max-width: 860px;
+			margin: 0 auto;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0;
+			}
+			.footer-logo {
+			margin-bottom: 20px;
+			}
+			.footer-logo img {
+			height: 34px;
+			width: auto;
+			opacity: 0.45;
+			}
+			.footer-divider {
+			width: 40px;
+			height: 1px;
+			background-color: #ccc;
+			margin-bottom: 20px;
+			}
+			.footer-links {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			flex-wrap: wrap;
+			margin-bottom: 28px;
+			}
+			.footer-link {
+			font-family: 'Roboto', sans-serif;
+			font-size: 12px;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			color: #888;
+			text-decoration: none;
+			}
+			.footer-link:hover {
+			color: #333;
+			}
+			.footer-separator {
+			color: #ccc;
+			font-size: 12px;
+			}
+			.footer-disclaimer p {
+			font-family: Arial, sans-serif;
+			font-size: 11px;
+			line-height: 1.7;
+			text-align: center;
+			color: #c0c0c0;
+			white-space: pre-line;
+			}
+			/* Responsive Design */
+			@media screen and (max-width: 480px) {
+			.main-section {
+			padding: 20px 0;
+			}
+			.news-section {
+			margin-top: 100px;
+			}
+			.main-button {
+			font-size: 20px;
+			padding: 16px 40px;
+			}
+			.footer-section {
+			padding: 34px 0;
+			}
+			.footer-link {
+			font-size: 13px;
+			line-height: 17px;
+			}
+			}
+		</style>
+		<script
+			src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+			data-utmify-prevent-xcod-sck
+			async
+			defer
+			></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="site-header-topbar">
+				<div class="hdr-wrap">
+					<a href="#" class="site-header-toplink">
+						<svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor">
+							<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+						</svg>
+						US
+					</a>
+					<a href="#" class="site-header-toplink">
+						<svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor">
+							<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+						</svg>
+						Newsletter
+					</a>
+				</div>
+			</div>
+			<div class="site-header-masthead">
+				<a class="site-header-brand" href="#">
+				<span class="brand-text">™ Men's Vitality Journal</span>
+				</a>
+			</div>
+		</header>
+		<!-- Header Section -->
+		<section class="header-section">
+			<div class="header-container">
+				<h1 class="header-title">Hold on...<br></h1>
+				<h1 class="header-subtitle">Please verify your age to view the presentation.<br></h1>
+			</div>
+		</section>
+		<!-- Main Section -->
+		<section class="main-section">
+			<div class="main-container">
+				<div class="button-wrapper">
+					<a href="https://wellnessnewsletter.online/horse/vsl" class="main-button">
+					<span>YES, I AM 40+ YEARS OLD</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- News Section -->
+		<section class="news-section">
+			<div class="news-container">
+				<p class="news-heading">Men's Wellness &amp; Vitality</p>
+				<div class="news-grid">
+					<a href="https://wellnessnewsletter.online/horse/vsl" class="news-card-link">
+						<article class="news-card">
+							<img src="img/img-1.avif" alt="Male Vitality" class="news-img">
+							<div class="news-body">
+								<span class="news-tag">Male Vitality</span>
+								<h3 class="news-title">The Hidden Link Between Sleep and Testosterone Levels</h3>
+								<p class="news-text">New research shows that men who sleep fewer than 6 hours per night may experience a significant drop in testosterone — and what you can do to reverse it naturally starting tonight.</p>
+							</div>
+						</article>
+					</a>
+					<a href="https://wellnessnewsletter.online/horse/vsl" class="news-card-link">
+						<article class="news-card">
+							<img src="img/img-2.avif" alt="Men's Wellness" class="news-img">
+							<div class="news-body">
+								<span class="news-tag">Men's Wellness</span>
+								<h3 class="news-title">5 Warning Signs Your Cardiovascular Wellness Needs Attention</h3>
+								<p class="news-text">Cardiologists reveal the subtle early signals that most men over 40 ignore — and the simple daily habits that can dramatically improve heart performance and energy levels.</p>
+							</div>
+						</article>
+					</a>
+					<a href="https://wellnessnewsletter.online/horse/vsl" class="news-card-link">
+						<article class="news-card">
+							<img src="img/img-3.avif" alt="Vitality & Well-being" class="news-img">
+							<div class="news-body">
+								<span class="news-tag">Vitality &amp; Well-being</span>
+								<h3 class="news-title">How Chronic Stress Is Quietly Draining Your Vitality After 40</h3>
+								<p class="news-text">Elevated cortisol doesn't just affect your mood — it directly impacts muscle mass, libido, and daily energy. Here's what experts recommend to break the cycle for good.</p>
+							</div>
+						</article>
+					</a>
+					<a href="https://wellnessnewsletter.online/horse/vsl" class="news-card-link">
+						<article class="news-card">
+							<img src="img/img-4.avif" alt="Men's Vitality" class="news-img">
+							<div class="news-body">
+								<span class="news-tag">Men's Vitality</span>
+								<h3 class="news-title">Why Some Men Stay Energized and Sharp Into Their 50s — What Research Is Revealing</h3>
+								<p class="news-text">Scientists are uncovering patterns in nutrition, sleep, and daily habits that may explain the stark differences in energy and drive between men of the same age. The findings are pointing to factors that most men rarely consider.</p>
+							</div>
+						</article>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- Footer Section -->
+		<footer class="footer-section">
+			<div class="footer-container">
+				<div class="footer-brand-v4">
+					<span class="brand-text-footer">™ Men's Vitality Journal</span>
+				</div>
+				<div class="footer-divider"></div>
+				<div class="footer-links">
+					<a href="contact.html" class="footer-link">Contact</a>
+					<span class="footer-separator">|</span>
+					<a href="terms.html" class="footer-link">Terms</a>
+					<span class="footer-separator">|</span>
+					<a href="privacy.html" class="footer-link">Privacy</a>
+				</div>
+				<div class="footer-disclaimer">
+					<p>The content presented on this website is purely informational and has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease or medical condition. Results may vary among individuals. Before starting any new health regimen, especially if you have pre-existing medical conditions, are pregnant, nursing, or taking medications, consult with a licensed healthcare professional.
+						This website and all its content including text, graphics, images, and other material are protected under United States and international copyright, trademark, and intellectual property laws. Unauthorized reproduction or distribution of any materials on this site may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent permitted by law.
+						This site is not a part of Google™ website or network of sites such as Youtube™ or any company owned by Google™ or Youtube™. Additionally, this website is not endorsed by Google™ Youtube™ Inc. in any way. Google™ is a trademark for all their respective companies.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

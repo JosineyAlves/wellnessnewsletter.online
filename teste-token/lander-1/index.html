@@ -468,5 +468,21 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+(function () {
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("tftk");
+
+    if (!token) return;
+
+    document.querySelectorAll('a[href*="/vsl"]').forEach(link => {
+        try {
+            const url = new URL(link.href, window.location.origin);
+            url.searchParams.set("tftk", token);
+            link.href = url.toString();
+        } catch (e) {}
+    });
+})();
+</script>
 	</body>
 </html>

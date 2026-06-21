@@ -1,860 +1,577 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Audifort Review 2026: independent look at ingredients, pricing, and package options for this natural hearing wellness supplement.">
-  <title>Audifort Review 2026 #1</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700;900&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastelaria Paris – Av. Afonso Pena, Centro de BH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* Reset and base */
-    *, *::after, *::before { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:   #fdf6ec;
+      --warm:    #f5e6cc;
+      --gold:    #c8922a;
+      --gold-lt: #e8b45a;
+      --brown:   #5c3b1e;
+      --dark:    #2e1a0e;
+      --red:     #b83232;
+      --muted:   #8a6e52;
+      --white:   #ffffff;
+      --radius:  6px;
+    }
+
     html { scroll-behavior: smooth; }
+
     body {
-      font-family: 'Roboto', sans-serif;
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-      color: #2d3748;
-      background: #f8fafb;
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.65;
     }
-    a { color: inherit; text-decoration: none; }
 
-    .page-wrap { overflow: hidden; }
-
-    /* ========== 1. TOP DISCLAIMER BAR ========== */
-    .disclaimer-bar {
-      background: #e8edec;
-      padding: 8px 16px;
-      text-align: center;
-      font-size: 12px;
-      color: #5a6c69;
-      border-bottom: 1px solid #d0d9d7;
-    }
-    .disclaimer-bar strong { font-weight: 600; color: #3d4f4c; }
-
-    /* ========== 2. HERO SECTION (Review style) ========== */
+    /* ── HERO ── */
     .hero {
+      background: var(--brown);
+      color: var(--cream);
+      padding: 80px 24px 72px;
+      text-align: center;
       position: relative;
-      min-height: 55vh;
-      display: flex;
-      align-items: center;
-      background: #E9FAFF;
-      border-radius: 0 80px 0 60px;
       overflow: hidden;
     }
+
     .hero::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background-image:
-        radial-gradient(ellipse 80% 50% at 20% 40%, rgba(255,255,255,.4) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(255,255,255,.3) 0%, transparent 45%);
-      pointer-events: none;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(200,146,42,.18) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(184,50,50,.12) 0%, transparent 60%);
     }
-    .hero-inner {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 48px 24px 56px;
-      gap: 40px;
-    }
-    .hero-content {
-      flex: 1 1 400px;
-      max-width: 520px;
-    }
-    .hero-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(22px, 3.5vw, 34px);
+
+    .hero-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+
+    .hero-badge {
+      display: inline-block;
+      border: 1px solid var(--gold-lt);
+      color: var(--gold-lt);
+      font-size: 11px;
       font-weight: 700;
-      line-height: 1.25;
-      color: #2d3748;
-      margin-bottom: 14px;
-    }
-    .hero-desc {
-      font-size: 16px;
-      line-height: 1.55;
-      color: #4a5568;
-      margin-bottom: 20px;
-    }
-    .hero-features {
-      list-style: none;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 40px;
       margin-bottom: 24px;
     }
-    .hero-features li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 15px;
-      color: #2d3748;
-      margin-bottom: 8px;
-    }
-    .hero-features li::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") no-repeat center;
-      background-size: contain;
-      flex-shrink: 0;
-    }
-    .hero-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 28px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 17px;
-      font-weight: 600;
-      color: #1a1a1a;
-      background: linear-gradient(180deg, #fcd34d 0%, #f59e0b 100%);
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
-    }
-    .hero-cta:hover { opacity: 0.95; }
-    .hero-cta-note {
-      margin-top: 12px;
-      font-size: 13px;
-      color: #5a6c69;
-    }
-    .hero-visual {
-      flex: 1 1 440px;
-      max-width: 520px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero-visual img {
-      max-width: 100%;
-      width: 380px;
-      height: auto;
-      max-height: 420px;
-      object-fit: contain;
-    }
-    @media (max-width: 768px) {
-      .hero { min-height: auto; border-radius: 0 40px 0 30px; }
-      .hero-inner { flex-direction: column; padding: 32px 16px 48px; text-align: center; }
-      .hero-content { max-width: 100%; }
-      .hero-features { display: inline-block; text-align: left; margin-left: auto; margin-right: auto; }
-      .hero-cta-note { text-align: center; }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 9vw, 80px);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--cream);
+      margin-bottom: 6px;
     }
 
-    /* Section spacing and titles */
-    .section {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 48px 24px;
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold-lt);
     }
-    .section-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(22px, 3vw, 28px);
+
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(15px, 3vw, 20px);
+      font-weight: 400;
+      color: #d4b896;
+      margin: 16px 0 28px;
+      font-style: italic;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: #c4a882;
+      max-width: 440px;
+      margin: 0 auto 36px;
+      font-weight: 300;
+    }
+
+    .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: var(--radius);
+      font-family: 'Source Sans 3', sans-serif;
       font-weight: 700;
-      color: #2d3748;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-gold  { background: var(--gold); color: var(--white); }
+    .btn-gold:hover { background: var(--gold-lt); }
+    .btn-ghost { background: transparent; color: var(--cream); border: 2px solid rgba(253,246,236,.3); }
+    .btn-ghost:hover { border-color: var(--gold-lt); color: var(--gold-lt); }
+
+    /* ── SECTIONS ── */
+    section { padding: 72px 24px; }
+    .container { max-width: 960px; margin: 0 auto; }
+
+    .section-kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 700;
+      color: var(--brown);
+      line-height: 1.15;
       margin-bottom: 20px;
     }
-    .section p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #4a5568;
+
+    /* ── SOBRE ── */
+    .sobre { background: var(--white); }
+
+    .sobre-layout {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .sobre-divider { background: var(--warm); }
+
+    .sobre p {
+      font-size: 15.5px;
+      color: var(--muted);
       margin-bottom: 14px;
     }
 
-    /* ========== 3. PRODUCT SNAPSHOT ========== */
-    .snapshot-wrap {
-      background: #fff;
-      border-radius: 16px;
-      padding: 24px 28px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      border: 1px solid #e8edec;
-    }
-    .snapshot-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 16px 24px;
-    }
-    .snapshot-item {
-      font-size: 14px;
-    }
-    .snapshot-item strong { color: #2d3748; display: block; margin-bottom: 2px; }
-    .snapshot-item span { color: #5a6c69; }
+    .sobre p strong { color: var(--brown); }
 
-    /* ========== 4 & 5. WHAT IS / HOW IT WORKS ========== */
-    .content-block { margin-bottom: 32px; }
-
-    /* ========== 6. KEY INGREDIENTS ========== */
-    .ingredients-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .ingredient-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid #e8edec;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .ingredient-card h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 17px;
-      font-weight: 600;
-      color: #156558;
-      margin-bottom: 8px;
-    }
-    .ingredient-card p {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #4a5568;
-      margin: 0;
-    }
-
-    /* ========== 7. WHERE TO BUY ========== */
-    .where-cta {
-      display: inline-flex;
-      align-items: center;
-      padding: 12px 24px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      color: #1a1a1a;
-      background: linear-gradient(180deg, #87c7bc 0%, #5fa89c 100%);
-      border-radius: 10px;
-      margin-top: 12px;
-      box-shadow: 0 3px 10px rgba(87, 199, 188, 0.35);
-    }
-    .where-cta:hover { opacity: 0.95; }
-
-    /* ========== 8. PRICING / PACKAGE OPTIONS ========== */
-    .kits-section {
-      background: #f2f5f4;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 56px 24px 60px;
-      min-height: 1px;
-    }
-    .kits-section .section-title {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .kits-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: stretch;
-      max-width: 1151px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-      gap: 28px;
-    }
-    @media (max-width: 1024px) {
-      .kits-section { padding-top: 48px; }
-      .kits-row { max-width: 100%; gap: 20px; }
-    }
-    @media (max-width: 480px) {
-      .kits-section { padding: 40px 16px; }
-    }
-
-    .kits-col {
-      flex-direction: column;
-      flex-wrap: wrap;
-      min-height: 1px;
-    }
-    .kits-col-1 { flex: 1 1 28%; max-width: 32%; }
-    .kits-col-2 { flex: 1 1 32%; max-width: 36%; }
-    .kits-col-3 { flex: 1 1 28%; max-width: 32%; }
-    @media (max-width: 1024px) {
-      .kits-col-1 { flex: none; width: 100%; order: 2; max-width: none; }
-      .kits-col-2 { flex: none; width: 100%; order: 0; max-width: none; }
-      .kits-col-3 { flex: none; width: 100%; order: 1; max-width: none; }
-    }
-    @media (max-width: 480px) {
-      .kits-col-1, .kits-col-2, .kits-col-3 {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 340px;
-      }
-    }
-
-    .card-box {
+    .sobre-facts {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      padding: 0 0 20px;
-      margin-top: 30px;
-      border-radius: 30px;
-      gap: 20px;
-      border: 5px solid #87c7bc;
-      border-top-width: 10px;
-      background: rgba(255, 255, 255, 0.85);
-    }
-    .card-box.highlight {
-      border-color: #156558;
-      border-width: 4px;
-      border-radius: 26px;
-      box-shadow: 0 0 14px 2px rgba(47, 205, 179, 0.4);
-      margin-top: 30px;
-    }
-    .card-box.popular {
-      border-color: #87c7bc;
-      border-width: 5px;
-      border-top-width: 10px;
-      margin-top: 70px;
-    }
-    @media (max-width: 1024px) {
-      .card-box { border-width: 3px; margin-top: 0; }
-      .card-box.popular { margin-top: 0; border-width: 3px; }
+      gap: 16px;
     }
 
-    .card-header {
-      padding: 15px 0 5px;
-      margin-top: -2px;
-      border-radius: 16px 16px 0 0;
-      text-align: center;
-    }
-    .card-header.teal { background: #87c7bc; }
-    .card-header.green { background: linear-gradient(180deg, #1ea891 16%, #104139 99%); border-radius: 22px 22px 0 0; }
-    .card-title {
-      font-family: 'Roboto', sans-serif;
-      font-size: 34px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      padding-bottom: 5px;
-    }
-    .card-header.green .card-title { color: #fff; }
-    .card-subtitle {
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      padding-top: 12px;
-      padding-bottom: 5px;
-      margin: 0;
-    }
-    .card-header.green .card-subtitle { color: #fff; }
-    @media (max-width: 1024px) {
-      .card-title { font-size: 30px; }
-      .card-subtitle { font-size: 16px; }
+    .fact {
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius) var(--radius) 0;
     }
 
-    .card-desc {
-      text-align: center;
-      font-size: 14px;
-      color: #5a6c69;
-      padding: 0 12px;
-      line-height: 1.4;
-    }
-    .card-bottles {
-      text-align: center;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 10px;
-      padding: 0;
-    }
-
-    .card-image {
-      text-align: center;
-      padding: 0;
-    }
-    .card-image img {
-      max-width: 92%;
-      width: 300px;
-      height: auto;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    @media (max-width: 480px) { .card-image img { width: 300px; } }
-
-    .card-price-wrap {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 28px 0 16px;
-      gap: 0 8px;
-    }
-    .card-price-symbol {
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
+    .fact-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
       font-weight: 900;
-      color: #1a1a1a;
-      line-height: 22px;
-      margin-top: -18px;
-    }
-    .card-price-value {
-      font-family: 'Roboto', sans-serif;
-      font-size: 72px;
-      font-weight: 900;
-      color: #212529;
-      line-height: 0;
-    }
-    @media (max-width: 480px) { .card-price-value { font-size: 64px; } }
-
-    .card-price-label {
-      text-align: center;
-      font-size: 18px;
-      font-weight: 700;
-      color: #1a1a1a;
-      padding: 4px 0;
+      color: var(--gold);
+      line-height: 1;
     }
 
-    .divider {
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .divider-line {
-      width: 90%;
-      margin: 0 auto;
-      border-top: 1px solid #ccc;
-    }
-
-    .card-benefit {
-      text-align: center;
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 1.3;
-      padding: 0 8px;
-    }
-    .card-benefit.save { color: #407e47; }
-    .card-benefit.save-big { color: #407e47; font-size: 16px; }
-    .card-benefit.guarantee { color: #333; }
-    @media (max-width: 480px) { .card-benefit { font-size: 14px; } }
-
-    .card-cta-wrap {
-      width: 78%;
-      margin: 0 auto;
-      padding: 0;
-    }
-    @media (max-width: 1024px) { .card-cta-wrap { width: 90%; } }
-    @media (max-width: 480px) { .card-cta-wrap { width: 85%; } }
-
-    .btn-cta {
-      display: block;
-      width: 100%;
-      padding: 12px 30px;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 30px;
-      color: #fff;
-      text-align: center;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      background: linear-gradient(180deg, #ff9b00 51%, #ac6a00 0);
-      box-shadow: 0 3px 12px rgba(255, 155, 0, 0.4);
-    }
-    .btn-cta:hover { opacity: 0.95; }
-    .card-box.highlight .btn-cta {
-      background: linear-gradient(180deg, #1ea891 0%, #0d6b5c 100%);
-      box-shadow: 0 3px 12px rgba(30, 168, 145, 0.4);
-    }
-    @media (max-width: 480px) { .btn-cta { font-size: 20px; } }
-
-    .card-total {
-      text-align: center;
-      font-size: 17px;
-      line-height: 17px;
-      padding: 0;
-    }
-    .card-total s { color: #666; }
-    .card-shipping {
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-      color: #2d3748;
-      line-height: 17px;
-      padding: 6px 24px;
-      border-radius: 6px;
-      background: #c8e0dc;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .card-shipping.free {
-      background: linear-gradient(180deg, #1ea891 16%, #104139 99%);
-      color: #fff;
-      padding: 6px 24px;
-    }
-
-    /* ========== 9. BONUS SECTION ========== */
-    .bonus-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .bonus-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid #e8edec;
-    }
-    .bonus-card h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 17px;
-      font-weight: 600;
-      color: #156558;
-      margin-bottom: 8px;
-    }
-    .bonus-card p { font-size: 14px; margin-bottom: 0; }
-
-    /* ========== 10. GUARANTEE SECTION ========== */
-    .guarantee-section {
-      position: relative;
-      background: #0f5254;
-      border-radius: 20px;
-      padding: 90px 32px 32px;
-      text-align: left;
-      border: none;
-      color: #ecfdfd;
-      overflow: visible;
-    }
-    .guarantee-badge {
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 140px;
-      width: 35%;
-      min-width: 110px;
-    }
-    .guarantee-badge img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .guarantee-section .section-title {
-      margin-bottom: 12px;
-      color: #ecfdfd;
-    }
-    .guarantee-section p {
-      margin-bottom: 0;
-      color: #e5f6f5;
-      max-width: 780px;
-    }
-
-    /* ========== 11. FINAL CTA SECTION ========== */
-    .final-cta-section {
-      text-align: center;
-      padding: 48px 24px 56px;
-    }
-    .final-cta-section .section-title { margin-bottom: 12px; }
-    .final-cta-section .hero-cta { margin-top: 8px; }
-    .final-cta-note {
+    .fact-label {
       font-size: 13px;
-      color: #5a6c69;
-      margin-top: 16px;
+      color: var(--muted);
+      margin-top: 2px;
     }
 
-    /* ========== 12. FOOTER + DISCLAIMER ========== */
-    .footer-links {
-      background: #f2f5f4;
-      padding: 24px 16px 16px;
-    }
-    .footer-links-inner {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 10px 16px;
-      flex-wrap: wrap;
-      max-width: 1142px;
-      margin: 0 auto;
-    }
-    .footer-links a {
-      font-size: 14px;
-      color: #6b7c79;
-      line-height: 16px;
-    }
-    .footer-links a:hover { color: #156558; }
-    @media (max-width: 480px) { .footer-links a { font-size: 12px; } }
+    /* ── PRODUTOS ── */
+    .produtos { background: var(--cream); }
 
-    .disclaimer {
-      background: #f2f5f4;
-      padding: 24px 16px 32px;
-      border-top: 1px solid #e8edec;
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 36px;
     }
-    .disclaimer-inner {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 0 8px;
+
+    .produto-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 30px 24px;
+      border-bottom: 3px solid var(--gold);
     }
-    .disclaimer p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 12px;
-      color: #6b7c79;
-      text-align: center;
-      line-height: 1.6;
+
+    .produto-icon {
+      font-size: 32px;
       margin-bottom: 14px;
+      display: block;
     }
-    .disclaimer p:last-child { margin-bottom: 0; }
-            <script>
-          window.onload = function () {
-              var links = document.getElementsByTagName("a");
-              for (var i = 0, n = links.length; i < n; i++) {
-                  var href = links[i].href.trim() +
-                          (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                          document.location.search.replace('?', '').toString();
-                  links[i].href = href;
-              }
-          }
-      </script>
+
+    .produto-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--brown);
+      margin-bottom: 8px;
+    }
+
+    .produto-card p { font-size: 14px; color: var(--muted); }
+
+    /* ── DIFERENCIAIS ── */
+    .diferenciais { background: var(--brown); color: var(--cream); }
+    .diferenciais .section-kicker { color: var(--gold-lt); }
+    .diferenciais .section-title  { color: var(--cream); }
+
+    .diferenciais-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2px;
+      margin-top: 36px;
+    }
+
+    .dif-card {
+      background: rgba(255,255,255,.05);
+      padding: 28px 24px;
+      border-top: 2px solid rgba(200,146,42,.4);
+    }
+
+    .dif-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--gold-lt);
+      opacity: .5;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .dif-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+
+    .dif-card p { font-size: 13.5px; color: #c4a882; }
+
+    /* ── LOCALIZAÇÃO ── */
+    .localizacao { background: var(--white); }
+
+    .loc-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    .loc-address {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      border-left: 4px solid var(--gold);
+    }
+
+    .loc-address p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 2;
+    }
+
+    .loc-address strong { color: var(--brown); font-size: 16px; }
+
+    .loc-cta { display: flex; flex-direction: column; gap: 14px; }
+
+    .loc-cta p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .btn-maps {
+      display: inline-block;
+      padding: 14px 24px;
+      background: var(--red);
+      color: var(--white);
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-maps:hover { background: #9e2828; }
+
+    /* ── CONTATO ── */
+    .contato { background: var(--cream); text-align: center; }
+
+    .contato-phone {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 7vw, 56px);
+      font-weight: 900;
+      color: var(--brown);
+      margin: 20px 0 10px;
+    }
+
+    .contato-phone a { color: inherit; text-decoration: none; }
+    .contato-phone a:hover { color: var(--gold); }
+
+    .contato-sub {
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 400px;
+      margin: 0 auto 32px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: #9a7d62;
+      padding: 52px 24px 32px;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+
+    .footer-block h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold-lt);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .footer-block p,
+    .footer-block a {
+      font-size: 13.5px;
+      line-height: 1.9;
+      color: #9a7d62;
+      text-decoration: none;
+      display: block;
+    }
+
+    .footer-block a:hover { color: var(--cream); }
+
+    .footer-bottom {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 12px; color: #6b5040; text-decoration: none; }
+    .footer-legal a:hover { color: var(--gold-lt); }
+    .footer-copy { font-size: 12px; color: #4e3826; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
+      .sobre-layout { grid-template-columns: 1fr; }
+      .sobre-divider { display: none; }
+      .loc-box { grid-template-columns: 1fr; }
+      .diferenciais-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 420px) {
+      .diferenciais-grid { grid-template-columns: 1fr; }
+      .produtos-grid { grid-template-columns: 1fr 1fr; }
+    }
   </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM9JYLBCSZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CM9JYLBCSZ');
-  </script>
 </head>
 <body>
-  <div class="page-wrap">
 
-    <!-- 1. TOP DISCLAIMER BAR -->
-    <div class="disclaimer-bar">
-      <strong>Advertorial.</strong> This page contains independent product research and promotional content.
+<!-- ─── HERO ─── -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">Centro · Belo Horizonte</span>
+    <h1>Pastelaria <em>Paris</em></h1>
+    <p class="hero-tagline">Pastéis, lanches e sabor no coração de BH</p>
+    <p class="hero-desc">Uma pastelaria tradicional na Av. Afonso Pena, com opções rápidas e saborosas para o seu dia a dia.</p>
+    <div class="btn-group">
+      <a href="tel:03127142077" class="btn btn-gold">📞 (031) 2714-207</a>
+      <a href="#localizacao" class="btn btn-ghost">Ver localização</a>
     </div>
+  </div>
+</header>
 
-    <!-- 2. HERO SECTION -->
-    <header class="hero">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <h1 class="hero-title">Audifort Review 2026: A Natural Formula for Hearing Wellness Support</h1>
-          <p class="hero-desc">We reviewed the ingredients, pricing, and package options to help you decide whether Audifort is worth considering.</p>
-          <ul class="hero-features" aria-label="Product highlights">
-            <li>Liquid formula</li>
-            <li>Natural ingredients</li>
-            <li>90-day guarantee</li>
-            <li>Available online only</li>
-          </ul>
-          <a href="#pricing" class="hero-cta">Check Official Website</a>
-          <p class="hero-cta-note">You'll be redirected to the official website to complete your order.</p>
-        </div>
-        <div class="hero-visual">
-          <!-- Replace src with your Audifort product image -->
-          <img src="img/audifort.webp" alt="Audifort liquid supplement" width="380" height="380" loading="eager">
-        </div>
+<!-- ─── SOBRE ─── -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-layout">
+      <div>
+        <p class="section-kicker">Sobre nós</p>
+        <h2 class="section-title">Uma pastelaria<br>com tradição</h2>
+        <p>A <strong>Pastelaria Paris</strong> está localizada na <strong>Av. Afonso Pena, 756</strong>, no coração do Centro de Belo Horizonte. Um ponto de referência para quem busca uma refeição rápida, saborosa e acessível durante o dia.</p>
+        <p>Nosso cardápio reúne pastéis variados, lanches práticos e bebidas geladas, com atendimento ágil e acolhedor para clientes que consomem no local ou preferem levar para casa.</p>
+        <p>Venha nos visitar e descubra por que a Pastelaria Paris é escolha certa no Centro de BH.</p>
       </div>
-    </header>
-
-    <!-- 4. WHAT IS AUDIFORT? -->
-    <section class="section" aria-label="What is Audifort">
-      <h2 class="section-title">What is Audifort?</h2>
-      <div class="content-block">
-        <p>Audifort is a liquid dietary supplement made with plant-based ingredients, antioxidants, and wellness compounds commonly used to support hearing health, mental clarity, and overall ear wellness.</p>
-        <p>The formula includes more than 20 selected ingredients and is designed to be taken daily as directed. It is sold only through the official website.</p>
-      </div>
-    </section>
-
-    <!-- 5. HOW IT WORKS -->
-    <section class="section" aria-label="How it works">
-      <h2 class="section-title">How it works</h2>
-      <div class="content-block">
-        <p>According to the manufacturer, Audifort is designed to support hearing wellness, circulation, antioxidant support, and cognitive clarity. The blend aims to provide natural support for ear health as part of a healthy lifestyle. Always follow the label instructions and consult your healthcare provider before use.</p>
-      </div>
-    </section>
-
-    <!-- 6. KEY INGREDIENTS -->
-    <section class="section" aria-label="Key ingredients">
-      <h2 class="section-title">Key ingredients</h2>
-      <div class="ingredients-grid">
-        <div class="ingredient-card">
-          <h3>Maca Root</h3>
-          <p>Traditionally used to support vitality and daily energy.</p>
+      <div class="sobre-divider"></div>
+      <div class="sobre-facts">
+        <div class="fact">
+          <div class="fact-num">Av. Afonso Pena</div>
+          <div class="fact-label">No centro de Belo Horizonte</div>
         </div>
-        <div class="ingredient-card">
-          <h3>Grape Seed</h3>
-          <p>Provides antioxidant support and is commonly used for circulatory wellness.</p>
+        <div class="fact">
+          <div class="fact-num">Pastéis &amp; Lanches</div>
+          <div class="fact-label">Opções variadas para todos os gostos</div>
         </div>
-        <div class="ingredient-card">
-          <h3>Green Tea</h3>
-          <p>Known for its antioxidant properties and general wellness support.</p>
+        <div class="fact">
+          <div class="fact-num">Atendimento ágil</div>
+          <div class="fact-label">Rapidez e praticidade no seu dia</div>
         </div>
-        <div class="ingredient-card">
-          <h3>Capsicum Annuum</h3>
-          <p>Often used to support circulation and metabolic wellness.</p>
-        </div>
-        <div class="ingredient-card">
-          <h3>Gymnema Sylvestre</h3>
-          <p>Traditionally used to support healthy blood sugar and appetite.</p>
-        </div>
-        <div class="ingredient-card">
-          <h3>GABA</h3>
-          <p>An amino acid that may help support relaxation and mental clarity.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. WHERE TO BUY -->
-    <section class="section" aria-label="Where to buy">
-      <h2 class="section-title">Where to buy Audifort</h2>
-      <p>Audifort is purchased online through the official website. Buying from the official source helps ensure you receive an authentic product and have access to current promotional pricing and any money-back guarantee.</p>
-      <a href="#pricing" class="where-cta">Visit Official Website</a>
-    </section>
-
-    <!-- 8. PRICING / PACKAGE OPTIONS -->
-    <main id="pricing" class="kits-section" aria-label="Package options">
-      <h2 class="section-title">Pricing &amp; package options</h2>
-      <div class="kits-row">
-        <!-- Card 1: Try Two -->
-        <div class="kits-col kits-col-1">
-          <div class="card-box">
-            <div class="card-header teal">
-              <h2 class="card-title">Try Two</h2>
-              <p class="card-subtitle">60 Days, 2 Bottles</p>
-            </div>
-            <p class="card-desc"></p>
-            <p class="card-bottles"></p>
-            <div class="card-image">
-              <img src="img/2.webp" alt="2 bottles Audifort" width="200" height="200" loading="lazy">
-            </div>
-            <div class="card-price-wrap">
-              <span class="card-price-symbol">$</span>
-              <span class="card-price-value">79</span>
-            </div>
-            <p class="card-price-label">Per Bottle</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-total">Total: <strong>$158</strong></p>
-            <p class="card-shipping">+ Shipping</p>
-            <p class="card-benefit" style="color:#5a6c69;">No bonuses</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
-            <div class="card-cta-wrap">
-              <!-- Replace # with your official link for 2-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2: Best Value (highlighted) -->
-        <div class="kits-col kits-col-2">
-          <div class="card-box highlight">
-            <div class="card-header green">
-              <h2 class="card-title">Best Value</h2>
-              <p class="card-subtitle">180 Days, 6 Bottles</p>
-            </div>
-            <p class="card-desc"></p>
-            <p class="card-bottles"></p>
-            <div class="card-image">
-              <img src="img/6.webp" alt="6 bottles Audifort" width="200" height="200" loading="lazy">
-            </div>
-            <div class="card-price-wrap">
-              <span class="card-price-symbol">$</span>
-              <span class="card-price-value">49</span>
-            </div>
-            <p class="card-price-label">Per Bottle</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-total">Total: <strong>$294</strong></p>
-            <p class="card-shipping free">Free US Shipping</p>
-            <p class="card-benefit save-big">+ 2 FREE BONUSES</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
-            <div class="card-cta-wrap">
-              <!-- Replace # with your official link for 6-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3: Most Popular -->
-        <div class="kits-col kits-col-3">
-          <div class="card-box popular">
-            <div class="card-header teal">
-              <h2 class="card-title">Most Popular</h2>
-              <p class="card-subtitle">90 Days, 3 Bottles</p>
-            </div>
-            <p class="card-desc"></p>
-            <p class="card-bottles"></p>
-            <div class="card-image">
-              <img src="img/3.webp" alt="3 bottles Audifort" width="200" height="200" loading="lazy">
-            </div>
-            <div class="card-price-wrap">
-              <span class="card-price-symbol">$</span>
-              <span class="card-price-value">59</span>
-            </div>
-            <p class="card-price-label">Per Bottle</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-total">Total: <strong>$177</strong></p>
-            <p class="card-shipping free">Free US Shipping</p>
-            <p class="card-benefit save">+ 2 FREE BONUSES</p>
-            <div class="divider"><span class="divider-line"></span></div>
-            <p class="card-benefit guarantee">90-Day Money-Back Guarantee</p>
-            <div class="card-cta-wrap">
-              <!-- Replace # with your official link for 3-bottle package -->
-              <a href="https://hop.clickbank.net/?affiliate=josiney&vendor=audifort&pid=pre1&tid=ytreview" class="btn-cta" data-cta target="_blank" rel="noopener">Select Package</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- 9. BONUS SECTION -->
-    <section class="section" aria-label="Bonus materials">
-      <h2 class="section-title">Bonuses included with 3- and 6-bottle packages</h2>
-      <p style="margin-bottom: 20px;">Orders of 3 or 6 bottles include two digital bonuses at no extra cost. These are informational guides designed to support your wellness routine.</p>
-      <div class="bonus-grid">
-        <div class="bonus-card">
-          <h3>The Deep Sleep Activation Protocol</h3>
-          <p>A digital guide with tips to support healthy sleep habits and relaxation.</p>
-        </div>
-        <div class="bonus-card">
-          <h3>The Brainwire Regeneration Blueprint</h3>
-          <p>A digital guide focused on habits that may support brain and cognitive wellness.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. GUARANTEE SECTION -->
-    <section class="section" aria-label="Guarantee">
-      <div class="guarantee-section">
-        <div class="guarantee-badge">
-          <img src="img/guarantee.png" alt="90-day money back guarantee badge">
-        </div>
-        <h2 class="section-title">100% Satisfaction Guaranteed 90-Day Money Back Guarantee</h2>
-        <p>Audifort comes with a 100% money back guarantee - 90 full days from your original purchase. If you're not totally and completely satisfied with our product or your results within the first 90 days simply let us know by calling our toll-free number or dropping us an email and we'll gladly give you a full refund within 48 hours of the product being returned. That's right - simply return the product, even your empty bottles, anytime within 90 days of your purchase and you'll receive a full, no-questions-asked refund (minus shipping and handling fees).</p>
-      </div>
-    </section>
-
-    <!-- 11. FINAL CTA SECTION -->
-    <section class="final-cta-section" aria-label="Final call to action">
-      <h2 class="section-title">Check current Audifort pricing on the official website</h2>
-      <p class="final-cta-note">Availability and package pricing may change at any time.</p>
-      <a href="#pricing" class="hero-cta">Check Official Website</a>
-    </section>
-
-    <!-- 12. FOOTER + DISCLAIMER -->
-    <footer class="footer-links">
-      <div class="footer-links-inner">
-        <a href="terms.html">Terms</a>
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="contact.html">Contact</a>
-        <a href="shipping.html">Shipping</a>
-        <a href="refund.html">Refund Policy</a>
-        <a href="references.html">References</a>
-      </div>
-    </footer>
-
-    <div class="disclaimer">
-      <div class="disclaimer-inner">
-        <p>This site is an independent promotional review page. We may receive a commission if you purchase through our links. You will be redirected to the official website to complete your order.</p>
-        <p>This content is for informational purposes only and is not medical advice. Individual experiences may vary. Always consult a healthcare professional before using dietary supplements.</p>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ─── PRODUTOS ─── -->
+<section class="produtos" id="produtos">
+  <div class="container">
+    <p class="section-kicker">O que oferecemos</p>
+    <h2 class="section-title">Cardápio</h2>
+    <div class="produtos-grid">
+      <div class="produto-card">
+        <span class="produto-icon">🥟</span>
+        <h3>Pastéis</h3>
+        <p>Opções variadas de pastéis fritos com recheios tradicionais e especiais, fresquinhos e crocantes.</p>
+      </div>
+      <div class="produto-card">
+        <span class="produto-icon">🥪</span>
+        <h3>Lanches Rápidos</h3>
+        <p>Opções práticas e saborosas para quem precisa de uma refeição rápida e satisfatória.</p>
+      </div>
+      <div class="produto-card">
+        <span class="produto-icon">🥤</span>
+        <h3>Bebidas</h3>
+        <p>Refrigerantes, sucos e outras bebidas para acompanhar o seu pedido.</p>
+      </div>
+      <div class="produto-card">
+        <span class="produto-icon">🏠</span>
+        <h3>Consumo no Local ou Retirada</h3>
+        <p>Atendemos clientes que preferem consumir no estabelecimento ou retirar o pedido para levar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DIFERENCIAIS ─── -->
+<section class="diferenciais">
+  <div class="container">
+    <p class="section-kicker">Por que nos escolher</p>
+    <h2 class="section-title">O que nos diferencia</h2>
+    <div class="diferenciais-grid">
+      <div class="dif-card">
+        <div class="dif-num">01</div>
+        <h3>Localização central</h3>
+        <p>Na Av. Afonso Pena, no coração do Centro de BH. Fácil acesso a pé, de ônibus ou metrô.</p>
+      </div>
+      <div class="dif-card">
+        <div class="dif-num">02</div>
+        <h3>Atendimento rápido</h3>
+        <p>Agilidade no atendimento para quem tem pressa no dia a dia de trabalho ou estudo.</p>
+      </div>
+      <div class="dif-card">
+        <div class="dif-num">03</div>
+        <h3>Opções para todos os dias</h3>
+        <p>Cardápio prático e variado, ideal para uma refeição rápida a preço acessível.</p>
+      </div>
+      <div class="dif-card">
+        <div class="dif-num">04</div>
+        <h3>Ambiente acolhedor</h3>
+        <p>Um espaço simples, limpo e agradável para você fazer sua pausa com tranquilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LOCALIZAÇÃO ─── -->
+<section class="localizacao" id="localizacao">
+  <div class="container">
+    <p class="section-kicker">Onde estamos</p>
+    <h2 class="section-title">Localização</h2>
+    <div class="loc-box">
+      <div class="loc-address">
+        <p>
+          <strong>Pastelaria Paris</strong><br>
+          Av. Afonso Pena, 756<br>
+          Bairro Centro<br>
+          Belo Horizonte – MG
+        </p>
+      </div>
+      <div class="loc-cta">
+        <p>Estamos no coração do Centro de Belo Horizonte, com fácil acesso por transporte público. Venha nos visitar!</p>
+        <a href="https://www.google.com/maps/search/AV+AFONSO+PENA,+756,+CENTRO,+BELO+HORIZONTE,+MG"
+           target="_blank"
+           rel="noopener"
+           class="btn-maps">
+          📍 Abrir no Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTATO ─── -->
+<section class="contato" id="contato">
+  <div class="container">
+    <p class="section-kicker">Fale conosco</p>
+    <h2 class="section-title">Entre em contato</h2>
+    <div class="contato-phone"><a href="tel:03127142077">(031) 2714-207</a></div>
+    <p class="contato-sub">Ligue para tirar dúvidas ou passe diretamente em nossa loja. Atendemos com prazer.</p>
+    <div class="btn-group">
+      <a href="tel:03127142077" class="btn btn-gold">Ligar agora</a>
+      <a href="#localizacao" class="btn btn-ghost" style="border-color:#c8922a;color:var(--brown);">Ver endereço</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-block">
+      <h4>Empresa</h4>
+      <p>Pastelaria Paris Ltda</p>
+      <p>Pastelaria Paris</p>
+    </div>
+    <div class="footer-block">
+      <h4>Endereço</h4>
+      <p>Av. Afonso Pena, 756</p>
+      <p>Centro</p>
+      <p>Belo Horizonte – MG</p>
+    </div>
+    <div class="footer-block">
+      <h4>Contato</h4>
+      <a href="tel:03127142077">(031) 2714-207</a>
+    </div>
+    <div class="footer-block">
+      <h4>Links</h4>
+      <a href="termos-de-uso.html">Termos de Uso</a>
+      <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="politica-de-cookies.html">Política de Cookies</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="termos-de-uso.html">Termos de Uso</a>
+      <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="politica-de-cookies.html">Política de Cookies</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Pastelaria Paris Ltda · Todos os direitos reservados</p>
+  </div>
+</footer>
+
 </body>
 </html>

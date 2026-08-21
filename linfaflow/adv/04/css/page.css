@@ -1,0 +1,606 @@
+/* ============ PAGE-SPECIFIC STYLES (bt1ed-july-a) ============ */
+/* Everything in this file is unique to this landing page — unlike
+   bootstrap.css / css.css / index2.css, which are the shared theme/framework
+   and stay separate so they can be reused/cached across other pages. */
+
+h2 {
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+
+.blockquote {
+    padding: 12px 10px;
+    width: 100%;
+    background-color: #EEEEEE !important;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: #0198BD !important;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 4px;
+    border-right-width: 0;
+}
+
+.s1bx25 {
+    margin: 20px 0 20px 0;
+    background: #f1f3f9;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+.ctabut {
+    color: #f6f9fe !important;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(0, 187, 71) !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 2.8px 2.8px 8px 2px rgb(99, 106, 123) !important;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2em;
+    letter-spacing: 0.02px;
+    width: 95% !important;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.midtxtbx1 {
+    background: #ff1010;
+    padding: 10px 22px 14px 22px;
+    border-radius: 10px;
+}
+
+.midtxtbx1 p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin: 0px 0px;
+}
+
+.reference {
+    margin-top: 350px;
+    color: rgb(161, 167, 178) !important;
+    font-size: 10px;
+}
+
+ul.ref-list {
+    padding: 10px 0 0 0;
+}
+
+.ref-list li {
+    font-size: 12px;
+}
+
+.ctabox {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(245, 249, 250);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.symlist {
+    padding-left: 35px;
+}
+
+.symlist li {
+    line-height: 2.0em;
+    list-style: disc;
+}
+
+ol {
+    list-style-type: decimal !important;
+    list-style-position: inside !important;
+    padding-left: 2em !important;
+    margin-left: 1.5em !important;
+}
+
+ol li {
+    margin-bottom: 0.5em;
+}
+
+/* Center the article column — there's no sidebar to balance the
+   col-md-9, so it otherwise hugs the left edge of the container. */
+.container.content .row .col-md-9 {
+    float: none;
+    margin: 0 auto;
+}
+
+/* Used by the morningvitality click-tracking script (see index.html) to
+   hide outbound links while it rewrites their href on page load. */
+.dtpcnt {
+    opacity: 0;
+}
+
+/* ============ QUALIFICATION QUIZ (opens on CTA click) ============ */
+/* Layout is an exact port of /discount/quiz-long61rosamed/css/style.css,
+   scoped under #quizOverlay so it can't leak onto the article page. */
+#quizOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: rgba(15, 15, 15, 0.55);
+    -webkit-backdrop-filter: saturate(120%) blur(2px);
+    backdrop-filter: saturate(120%) blur(2px);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+}
+#quizOverlay.open {
+    display: flex;
+}
+
+#quizOverlay .quiz-container {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px 20px;
+    width: 100%;
+    max-width: 600px;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    margin: auto;
+    box-sizing: border-box;
+    animation: quizPop 0.22s ease;
+}
+@keyframes quizPop {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+#quizOverlay .quiz-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#quizOverlay .back-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+#quizOverlay h1 {
+    font-size: clamp(18px, 4vw, 24px);
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0 26px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+}
+#quizOverlay h2 {
+    font-size: 19px;
+    color: #333;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+/* Named qz-progress(-bar) instead of the generic progress/progress-bar pair —
+   this page's own bootstrap.css defines .progress-bar{width:0;float:left} and
+   .progress{height:20px;...} for its own component, which collapsed this bar
+   to zero width when the classes collided. */
+#quizOverlay .qz-progress-bar {
+    background-color: #e4e4e7;
+    height: 6px;
+    border-radius: 999px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+#quizOverlay .qz-progress {
+    background-color: #1964a7;
+    height: 100%;
+    border-radius: 999px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+#quizOverlay .question {
+    margin-bottom: 14px;
+}
+#quizOverlay .options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#quizOverlay .options label {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+#quizOverlay .options label:hover {
+    border-color: #1964a7;
+    background-color: #E6F0F8;
+}
+#quizOverlay input[type="radio"],
+#quizOverlay input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    accent-color: #1964a7;
+}
+#quizOverlay button {
+    background-color: #1964a7;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 800;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    font-family: inherit;
+}
+#quizOverlay button:hover {
+    background-color: #2380d1;
+}
+#quizOverlay button:disabled {
+    background-color: #e4e4e7;
+    cursor: not-allowed;
+}
+#quizOverlay p {
+    color: #666;
+    margin: 0 0 10px 0;
+    font-style: italic;
+    font-size: 14px;
+}
+#quizOverlay #discount-animation {
+    text-align: center;
+    padding: 40px 0;
+}
+#quizOverlay .discount-circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quizOverlay .discount-circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+#quizOverlay .discount-circle circle {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s ease;
+}
+#quizOverlay .discount-circle .background {
+    stroke: #e4e4e7;
+}
+#quizOverlay .discount-circle .progress {
+    stroke: #1964a7;
+}
+#quizOverlay .discount-percentage {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1964a7;
+}
+#quizOverlay .package-image {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+#quizOverlay .package-image[src*="bundle-1plus1"] {
+    width: 105px;
+    height: 105px;
+}
+#quizOverlay .package-info {
+    display: flex;
+    flex-direction: column;
+}
+#quizOverlay .package-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+#quizOverlay .package-price {
+    font-weight: 500;
+}
+#quizOverlay .shipping-price {
+    font-size:14px;
+    font-weight: 400;
+}
+#quizOverlay .package-label {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+/* Warning message styles */
+#quizOverlay .warning-message {
+    color: #e11d48;
+    background-color: #ffe4e6;
+    border: 1px solid #fecdd3;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    display: none;
+    align-items: center;
+}
+#quizOverlay .warning-message:before {
+    content: "⚠️";
+    margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #quizOverlay {
+        padding: 0;
+    }
+    #quizOverlay .quiz-container {
+        border-radius: 0;
+        min-height: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #quizOverlay .back-arrow {
+        margin-right: 5px;
+    }
+    #quizOverlay h2 {
+        font-size: 20px;
+    }
+    #quizOverlay .options label {
+        font-size: 18px;
+    }
+    #quizOverlay .package-image {
+        width: 64px;
+        height: 64px;
+        margin-right: 10px;
+    }
+    #quizOverlay .package-image[src*="bundle-1plus1"] {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+@media (max-width: 390px) {
+    #quizOverlay h2 {
+        font-size: 18px;
+    }
+    #quizOverlay .options label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 422px) {
+    #quizOverlay #next-btn { font-size: 26px; }
+}
+
+@media (min-width: 343px) and (max-width: 380px) {
+    #quizOverlay #next-btn { font-size: 24px; }
+}
+
+/* ============ NEWS-STYLE HEADER (ported from adv/03) ============ */
+.site-header {
+    position: static;
+    z-index: 30;
+    width: 100%;
+    background: rgb(59, 57, 57);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+.site-header a {
+    color: inherit;
+    text-decoration: none;
+}
+.site-header .menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px;
+    margin: -6px;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+.site-header .menu-btn span {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.site-header .menu-btn.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.site-header .menu-btn.open span:nth-child(2) { opacity: 0; }
+.site-header .menu-btn.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.logo-text {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.07em;
+    color: #cc0000;
+    line-height: 1;
+    white-space: nowrap;
+    -webkit-text-stroke: 0.5px #cc0000;
+}
+.drawer-head .logo-text { font-size: 28px; }
+
+.site-header .nav-brand {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    flex: none;
+    padding-left: 16px;
+}
+
+.site-header .section-nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+    z-index: 1;
+    background: rgb(59, 57, 57);
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+.site-header .scroll-progress {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
+    width: 100%;
+    background: #cc0000;
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+    z-index: 1;
+}
+.site-header .section-nav ul {
+    list-style: none !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    max-width: 1280px;
+    display: flex !important;
+    gap: 16px;
+    overflow-x: auto;
+    height: 40px;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #d8d6d6;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.site-header .section-nav ul::-webkit-scrollbar { display: none; }
+.site-header .section-nav li {
+    white-space: nowrap;
+    padding: 3px 0;
+    border-bottom: 3px solid transparent;
+    list-style: none !important;
+}
+.site-header .section-nav li.active {
+    color: #fff;
+    border-bottom-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+    .site-header .nav-brand {
+        display: flex !important;
+    }
+    .site-header .nav-brand .menu-btn { display: flex; }
+    .site-header .section-nav { height: 52px; }
+    .site-header .section-nav ul { display: none !important; }
+}
+
+/* Mobile slide-out drawer */
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    visibility: hidden;
+}
+.mobile-menu.open { visibility: visible; }
+.mobile-menu a { color: inherit; text-decoration: none; }
+.mobile-menu .scrim {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.mobile-menu.open .scrim { opacity: 1; }
+.mobile-menu .drawer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 82%;
+    max-width: 320px;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 24px rgba(0, 0, 0, 0.16);
+    overflow-y: auto;
+}
+.mobile-menu.open .drawer { transform: translateX(0); }
+.mobile-menu .drawer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-bottom: 1px solid #ececec;
+}
+.mobile-menu .drawer-close {
+    background: none;
+    border: 0;
+    font-size: 26px;
+    line-height: 1;
+    color: #0c0c0c;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+.mobile-menu .drawer ul {
+    list-style: none !important;
+    margin: 8px 0 !important;
+    padding: 0 !important;
+}
+.mobile-menu .drawer li {
+    padding: 13px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #0c0c0c;
+    border-bottom: 1px solid #ececec;
+    list-style: none !important;
+}
+.mobile-menu .drawer li.active { color: #cc0000; }
